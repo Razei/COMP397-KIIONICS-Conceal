@@ -1,0 +1,1470 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16337 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/School/WebGameDev/COMP397-KIIONICS-Conceal/Conceal
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52871
+Successfully changed project path to: D:/School/WebGameDev/COMP397-KIIONICS-Conceal/Conceal
+D:/School/WebGameDev/COMP397-KIIONICS-Conceal/Conceal
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 39.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path D:/Unity/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/School/WebGameDev/COMP397-KIIONICS-Conceal/Conceal/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.6079
+Initialize mono
+Mono path[0] = 'D:/Unity/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/Unity/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001665 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 28.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.200 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000589 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.975 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 55.9 MB.
+System memory in use after: 55.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1533.
+Total: 2.043700 ms (FindLiveObjects: 0.162800 ms CreateObjectMapping: 0.034900 ms MarkObjects: 1.772800 ms  DeleteObjects: 0.071600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/New Folder
+  artifactKey: Guid(2d9029f6d9ad82a42a183764805eaad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder using Guid(2d9029f6d9ad82a42a183764805eaad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc12f6fc9a70f670141c368e9d4d59b6') in 0.032685 seconds
+  Import took 0.043359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000648 seconds.
+  path: Assets/_Scenes
+  artifactKey: Guid(6a5f5066ef89307448edd6a05e3c787a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scenes using Guid(6a5f5066ef89307448edd6a05e3c787a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0afa86e59e25334f02f2c0ede61c7c6a') in 0.011790 seconds
+  Import took 0.013844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.646879 seconds.
+  path: Assets/_Scripts
+  artifactKey: Guid(2d9029f6d9ad82a42a183764805eaad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts using Guid(2d9029f6d9ad82a42a183764805eaad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7b0ac60a602842f4668aaefd5f87e5') in 0.006773 seconds
+  Import took 0.019115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.010410 seconds.
+  path: Assets/_Scripts/Audio
+  artifactKey: Guid(578397566ba96c14fae2e49efc4ec3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/Audio using Guid(578397566ba96c14fae2e49efc4ec3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b567d893432aca1bb9f4955040c4bd') in 0.006715 seconds
+  Import took 0.013311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.047072 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a2c4dac9df7c17871e19a3b74f0e9f') in 0.006619 seconds
+  Import took 0.008688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.649480 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(8ee969d88392a1d46b66f60543223a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(8ee969d88392a1d46b66f60543223a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67619dcee925a0fe1604747594c304f6') in 0.006674 seconds
+  Import took 0.008804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.754807 seconds.
+  path: Assets/Models
+  artifactKey: Guid(9e05c20f9e9a50140a5c87234f109303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(9e05c20f9e9a50140a5c87234f109303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93ebb7341547dbdfa56732166752d4c') in 0.007144 seconds
+  Import took 0.009200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.769636 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(3226582eb0007e24786f14f4fde4961c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(3226582eb0007e24786f14f4fde4961c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019aa45a391c2c56255c9dc0859e1ed1') in 0.006843 seconds
+  Import took 0.009013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(3226582eb0007e24786f14f4fde4961c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(3226582eb0007e24786f14f4fde4961c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019aa45a391c2c56255c9dc0859e1ed1') in 0.002205 seconds
+  Import took 0.004270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.573034 seconds.
+  path: Assets/Resources/Prefabs
+  artifactKey: Guid(4f7a0c9bfbd551544ba821471c37d987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs using Guid(4f7a0c9bfbd551544ba821471c37d987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2ee3efa0050ef7a9ce000ee3f01d13') in 0.008389 seconds
+  Import took 0.010457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000721 seconds.
+  path: Assets/Resources/Prefabs
+  artifactKey: Guid(4f7a0c9bfbd551544ba821471c37d987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs using Guid(4f7a0c9bfbd551544ba821471c37d987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2ee3efa0050ef7a9ce000ee3f01d13') in 0.002360 seconds
+  Import took 0.004452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.478843 seconds.
+  path: Assets/Textures
+  artifactKey: Guid(8eb127f90f225da43bc320615944798a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures using Guid(8eb127f90f225da43bc320615944798a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd91715838b54b4f74b50f2b25c84dd') in 0.006632 seconds
+  Import took 0.008717 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000600 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.992 seconds
+Platform modules already initialized, skipping
+Script is not up to date after domain reload: guid(85900fb5729b6db42a6e417ad0d4c0f2) path("Packages/com.unity.probuilder/Editor/EditorCore/TextureRotateTool.cs") state(2)
+Script is not up to date after domain reload: guid(72b17ff6fd2249038e3d0e0d8969cef0) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/MergeFaces.cs") state(2)
+Script is not up to date after domain reload: guid(c2ff91a42b25c934da55ac7fa3b89db9) path("Packages/com.unity.probuilder/Editor/EditorCore/RepairActions.cs") state(2)
+Script is not up to date after domain reload: guid(d790e5dd7e634bac936d5dc0e026ae20) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/ExtrudeFaces.cs") state(2)
+Script is not up to date after domain reload: guid(50cd975dde7f63e4780b557b46379820) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorToolbar.cs") state(2)
+Script is not up to date after domain reload: guid(5beb7cb1a6d016b4a856f5112f2048fd) path("Packages/com.unity.probuilder/Editor/EditorCore/UnwrapParametersEditor.cs") state(2)
+Script is not up to date after domain reload: guid(57444c075000242ea99e263cee940de2) path("Packages/com.unity.probuilder/Runtime/Core/ColliderBehaviour.cs") state(2)
+Script is not up to date after domain reload: guid(e95f50cd644f90741bb903cb56bcd67e) path("Packages/com.unity.probuilder/Editor/EditorCore/BezierSplineEditor.cs") state(2)
+Script is not up to date after domain reload: guid(a61c5819f2b24f3fa336247228361725) path("Packages/com.unity.probuilder/Editor/MenuActions/Interaction/ToggleSelectBackFaces.cs") state(2)
+Script is not up to date after domain reload: guid(ac19f03e418a945ba9d37c7d32e5cecb) path("Packages/com.unity.probuilder/Runtime/Core/Projection.cs") state(2)
+Script is not up to date after domain reload: guid(48979d80dfe00104da221c9a1d70964a) path("Packages/com.unity.probuilder/Editor/EditorCore/VertexColorPalette.cs") state(2)
+Script is not up to date after domain reload: guid(0c96b34c870fc49b6b189786a55e14ad) path("Packages/com.unity.probuilder/Runtime/Core/ActionResult.cs") state(2)
+Script is not up to date after domain reload: guid(168b876617d5b904ab8d161bbcc20900) path("Packages/com.unity.probuilder/Editor/EditorCore/UVRenderOptions.cs") state(2)
+Script is not up to date after domain reload: guid(0af7522e3732400388ebc019d869caf2) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/OpenVertexPositionEditor.cs") state(2)
+Script is not up to date after domain reload: guid(c04d9be0543234e9cbb340e7ee259a5c) path("Packages/com.unity.probuilder/Runtime/Core/PreferenceDictionary.cs") state(2)
+Script is not up to date after domain reload: guid(d42d456e720b1c5438d87059c69284bd) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/TriangulationConstraint.cs") state(2)
+Script is not up to date after domain reload: guid(8459d3ed1cc648cba5015df2ff4850cb) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectFaceRing.cs") state(2)
+Script is not up to date after domain reload: guid(d563a6b12a743cf4399b92cf5366da6f) path("Packages/com.unity.probuilder/External/Poly2Tri/Polygon/Polygon.cs") state(2)
+Script is not up to date after domain reload: guid(881b617b0cb15574f93592b7b6a3e373) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepPointComparator.cs") state(2)
+Script is not up to date after domain reload: guid(cd856323da4211845ae7b4c7a54b294f) path("Packages/com.unity.probuilder/Runtime/Core/ProBuilderMeshFunction.cs") state(2)
+Script is not up to date after domain reload: guid(b2832c5edf831bd45a81ea86f2f3c0db) path("Packages/com.unity.probuilder/Editor/EditorCore/MenuOption.cs") state(2)
+Script is not up to date after domain reload: guid(e5d62e0d1462c4f02ae2aae1659cb748) path("Packages/com.unity.probuilder/Runtime/Core/ProBuilderSnapping.cs") state(2)
+Script is not up to date after domain reload: guid(d3ba8385f1f540519a3524dceb13733b) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/InsertEdgeLoop.cs") state(2)
+Script is not up to date after domain reload: guid(e41489573d46a4d039759c1808b22f3a) path("Packages/com.unity.probuilder/Editor/EditorCore/UndoUtility.cs") state(2)
+Script is not up to date after domain reload: guid(ec676d2a8ccecde4f8eb0d32aeaafb98) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/DelaunayTriangle.cs") state(2)
+Script is not up to date after domain reload: guid(0ab80081d3e2f274ba76a692cdcfa8d9) path("Packages/com.unity.progrids/Editor/ProGridsEditor.cs") state(2)
+Script is not up to date after domain reload: guid(9b24935f60532d7428cbcb5df316e359) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/Extrude.cs") state(2)
+Script is not up to date after domain reload: guid(a49dc64944b24efab4e8dda777a3211a) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectEdgeRing.cs") state(2)
+Script is not up to date after domain reload: guid(3a9ebc9851a2d8e4c868fa97dbbb35f6) path("Packages/com.unity.probuilder/Editor/EditorCore/IconUtility.cs") state(2)
+Script is not up to date after domain reload: guid(9f21d9e5e308b409f9173967b37d19be) path("Packages/com.unity.probuilder/Runtime/Core/IntVec2.cs") state(2)
+Script is not up to date after domain reload: guid(3208ba508d5e047c7bd843fc986a4f7a) path("Packages/com.unity.probuilder/Runtime/Core/MeshUtility.cs") state(2)
+Script is not up to date after domain reload: guid(088aa88f028654951ae27130f3556aae) path("Packages/com.unity.probuilder/Runtime/Core/Submesh.cs") state(2)
+Script is not up to date after domain reload: guid(4ca7e8f303d863c40930ccc1085e6990) path("Packages/com.unity.probuilder/Editor/EditorCore/Pref.cs") state(2)
+Script is not up to date after domain reload: guid(ff4f787bd1deaee4d82db29948ed6099) path("Packages/com.unity.probuilder/Editor/EditorCore/BooleanEditor.cs") state(2)
+Script is not up to date after domain reload: guid(6e4871d32a3aac4448c0c3f9e182f972) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Orientation.cs") state(2)
+Script is not up to date after domain reload: guid(ffea9638e10c9644aab23c2652f86279) path("Packages/com.unity.probuilder/Editor/EditorCore/TextureScaleTool.cs") state(2)
+Script is not up to date after domain reload: guid(071d390610ea548df87a9c03c370ced2) path("Packages/com.unity.probuilder/Runtime/Core/IntVec3.cs") state(2)
+Script is not up to date after domain reload: guid(8cefaab4396434cd9b6db510b6458a3d) path("Packages/com.unity.probuilder/Editor/EditorCore/ProBuilderEditorShortcuts.cs") state(2)
+Script is not up to date after domain reload: guid(20257f54bb007a547b7cb64d633a1664) path("Packages/com.unity.probuilder/AssetIdRemapUtility/Editor/AssetIdRemapBuilderEditor.cs") state(2)
+Script is not up to date after domain reload: guid(6965211c873de4048aa9043e5e287c73) path("Packages/com.unity.settings-manager/Editor/UserSettingsRepository.cs") state(2)
+Script is not up to date after domain reload: guid(8707cf6fb25b1438b9a0f476f93a76fe) path("Packages/com.unity.settings-manager/Editor/ISettingsRepository.cs") state(2)
+Script is not up to date after domain reload: guid(ffab696c539c4041848596918dd4590f) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/MergeObjects.cs") state(2)
+Script is not up to date after domain reload: guid(729d0f7265af462a8b41492704404f59) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/TriangulateFaces.cs") state(2)
+Script is not up to date after domain reload: guid(876d5900da5ecbb4885bf2be031e50e8) path("Packages/com.unity.progrids/Tests/Runtime/IgnoreSnapConditionalAttribute.cs") state(2)
+Script is not up to date after domain reload: guid(afd663fb17a03f749915886536580b91) path("Packages/com.unity.probuilder/Editor/EditorCore/Model.cs") state(2)
+Script is not up to date after domain reload: guid(589c2adb27cec4b26849162d3b624642) path("Packages/com.unity.probuilder/Editor/EditorCore/PositionScaleTool.cs") state(2)
+Script is not up to date after domain reload: guid(97626f417dcf4f68a68db312995f9e6b) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/ExtrudeEdges.cs") state(2)
+Script is not up to date after domain reload: guid(62ca02619442b364a81cca5a30c687d4) path("Packages/com.unity.progrids/Editor/Changelog.cs") state(2)
+Script is not up to date after domain reload: guid(d1e5ea3aa2689d948af3903d68647ca0) path("Packages/com.unity.probuilder/Editor/EditorCore/UVEditor.cs") state(2)
+Script is not up to date after domain reload: guid(d3c815396f3a64c2d925a2100e08e093) path("Packages/com.unity.settings-manager/Editor/Settings.cs") state(2)
+Script is not up to date after domain reload: guid(a00a369d82c4f7f47ae4dc5c2be474b8) path("Packages/com.unity.progrids/Runtime/IgnoreSnapAttribute.cs") state(2)
+Script is not up to date after domain reload: guid(924ccbaae96a57b438f256c6e54c1df8) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectLoop.cs") state(2)
+Script is not up to date after domain reload: guid(e0a94bc67627046b3a6a1f7ebfeafa2a) path("Packages/com.unity.progrids/Editor/PlayModeStateListener.cs") state(2)
+Script is not up to date after domain reload: guid(14789abc21c8f4551995149f67010e23) path("Packages/com.unity.probuilder/External/CSG/Classes/Model.cs") state(2)
+Script is not up to date after domain reload: guid(90907e6bfb6afd145986768f6095c76d) path("Packages/com.unity.probuilder/Editor/EditorCore/PreferencesUpdater.cs") state(2)
+Script is not up to date after domain reload: guid(136c7ff4a0ec419280b8df0d260180d0) path("Packages/com.unity.probuilder/External/CSG/CSG.cs") state(2)
+Script is not up to date after domain reload: guid(0b49a83783b3e5944b25d6c66eaa11e9) path("Packages/com.unity.probuilder/Runtime/Core/Math.cs") state(2)
+Script is not up to date after domain reload: guid(cd0eb60dd72b74385a28317c44ac6377) path("Packages/com.unity.probuilder/Runtime/Core/Face.cs") state(2)
+Script is not up to date after domain reload: guid(a419cef8f67fa48b8a2420ecc4ea4936) path("Packages/com.unity.probuilder/Runtime/Core/MaterialUtility.cs") state(2)
+Script is not up to date after domain reload: guid(72b3f039440c77d4694f2f4e12ab229a) path("Packages/com.unity.probuilder/Editor/EditorCore/SelectionUtility.cs") state(2)
+Script is not up to date after domain reload: guid(a17a8a25b5ef051479efd66b56f58823) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorUtility.cs") state(2)
+Script is not up to date after domain reload: guid(146403a091a2c4d61976892730fa0c8d) path("Packages/com.unity.probuilder/Runtime/MeshOperations/Triangulation.cs") state(2)
+Script is not up to date after domain reload: guid(19a5e9b3c4e58415bbdc5ea80c5ba88f) path("Packages/com.unity.probuilder/Runtime/Core/WingedEdge.cs") state(2)
+Script is not up to date after domain reload: guid(daa26ef7aa9c82a47a06ddb6eefc0674) path("Packages/com.unity.probuilder/AssetIdRemapUtility/Editor/AssetIdRemapBuilderTreeView.cs") state(2)
+Script is not up to date after domain reload: guid(71cfb4d65045470facb2a2e1e41bec03) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/FlipFaceNormals.cs") state(2)
+Script is not up to date after domain reload: guid(563a1db348c114475a2d8289cc3e5a84) path("Packages/com.unity.probuilder/Runtime/Core/Edge.cs") state(2)
+Script is not up to date after domain reload: guid(99e7c5113a4eb574398293fbd74a61a6) path("Packages/com.unity.probuilder/Editor/EditorCore/ObjExporter.cs") state(2)
+Script is not up to date after domain reload: guid(12d2df8ff0d1e417e97df69e20c4c81b) path("Packages/com.unity.probuilder/Runtime/MeshOperations/MeshValidation.cs") state(2)
+Script is not up to date after domain reload: guid(6832442ae76f440d9a8a532b98ebfc57) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorMaterialUtility.cs") state(2)
+Script is not up to date after domain reload: guid(1376ed33245911e48ab91c560798f510) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/SetCollider.cs") state(2)
+Script is not up to date after domain reload: guid(1fa9c1c880d9b724f978f610d18852e7) path("Packages/com.unity.probuilder/Editor/EditorCore/SmoothGroupEditor.cs") state(2)
+Script is not up to date after domain reload: guid(e835b73676a6e469aaac98a8b9ff3a48) path("Packages/com.unity.progrids/Tests/Editor/SnapOnSelectedAxisOnly.cs") state(2)
+Script is not up to date after domain reload: guid(9652f5ea32e3966499300efa0597ba92) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Util/PolygonGenerator.cs") state(2)
+Script is not up to date after domain reload: guid(361cb9f8460027f4a88a1b9610de18c0) path("Packages/com.unity.progrids/Editor/ScenePreferencesWindow.cs") state(2)
+Script is not up to date after domain reload: guid(65392811987f9438d8e3d2510255814f) path("Packages/com.unity.probuilder/Runtime/Core/BuiltinMaterials.cs") state(2)
+Script is not up to date after domain reload: guid(2734476e9b233c14987be5fbd0b43264) path("Packages/com.unity.probuilder/Runtime/Core/MeshHandles.cs") state(2)
+Script is not up to date after domain reload: guid(df1c6ba8c6074cd4872ff79d66cc49f5) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectFaceLoop.cs") state(2)
+Script is not up to date after domain reload: guid(319d9808ed35cae4ca212b4b97a9ee0b) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/TriangulationMode.cs") state(2)
+Script is not up to date after domain reload: guid(8e1eca4be91601347969177c85897f52) path("Packages/com.unity.probuilder/Editor/EditorCore/IconImporter.cs") state(2)
+Script is not up to date after domain reload: guid(8c1d6bd74068a5242b4a72adf38b704b) path("Packages/com.unity.probuilder/Editor/EditorCore/PreferencesInternal.cs") state(2)
+Script is not up to date after domain reload: guid(fdbc8889effe4c9e82971613ad25e182) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectVertexColor.cs") state(2)
+Script is not up to date after domain reload: guid(1f8949d910842a4418d15c6bc1749be5) path("Packages/com.unity.progrids/Editor/SemVer.cs") state(2)
+Script is not up to date after domain reload: guid(601f62929862ecb48956dc2dca0a2498) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/NearestNeighbourList.cs") state(2)
+Script is not up to date after domain reload: guid(05147f3a976fb174d987bc71dc70dee2) path("Packages/com.unity.probuilder/Editor/EditorCore/MenuItems.cs") state(2)
+Script is not up to date after domain reload: guid(066d50a96f4a480fac834bf3b64a8c26) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/BridgeEdges.cs") state(2)
+Script is not up to date after domain reload: guid(6ccb8b5f00388f545b4b986d5149d926) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/TriangulationDebugContext.cs") state(2)
+Script is not up to date after domain reload: guid(9264fc220d4aaf645b44e788499db0db) path("Packages/com.unity.probuilder/Editor/EditorCore/MenuAction.cs") state(2)
+Script is not up to date after domain reload: guid(287e3d97419a8431098a54977c657d14) path("Packages/com.unity.probuilder/Runtime/MeshOperations/UV/UvUnwrapping.cs") state(2)
+Script is not up to date after domain reload: guid(c3adccdd46845df47a5d11429dac1f82) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorMeshUtility.cs") state(2)
+Script is not up to date after domain reload: guid(1ececafedc41a4b4bb1be308a1512857) path("Packages/com.unity.probuilder/Editor/EditorCore/DimensionsEditor.cs") state(2)
+Script is not up to date after domain reload: guid(0dc75b34a006d47f48c004031e6ef14d) path("Packages/com.unity.settings-manager/Editor/UserSettingsProvider.cs") state(2)
+Script is not up to date after domain reload: guid(906ae4b0ce907194cb4d1d255e03675b) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Sets/PointSet.cs") state(2)
+Script is not up to date after domain reload: guid(396694d6dbd4734419cea5be4a942c9a) path("Packages/com.unity.probuilder/External/StlExporter/Code/pb_Stl.cs") state(2)
+Script is not up to date after domain reload: guid(cc401b52b64c4b7b87078d8ae3e29b68) path("Packages/com.unity.probuilder/Editor/MenuActions/Export/ExportAsset.cs") state(2)
+Script is not up to date after domain reload: guid(72ae47ebb978a4f6fad1a2ba92c3c110) path("Packages/com.unity.probuilder/Runtime/Core/ObjectPool.cs") state(2)
+Script is not up to date after domain reload: guid(77b34bf9fb2a49f6a5d0d0117bcc4c46) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/GrowSelection.cs") state(2)
+Script is not up to date after domain reload: guid(8e2e054ed623847d29efb1262605e8ef) path("Packages/com.unity.settings-manager/Editor/PackageSettingsRepository.cs") state(2)
+Script is not up to date after domain reload: guid(09802f6381a8fb2478f18a624b459ff8) path("Packages/com.unity.probuilder/Editor/EditorCore/IHasPreferences.cs") state(2)
+Script is not up to date after domain reload: guid(dfce99e9d622b416d8522fc504aa4459) path("Packages/com.unity.probuilder/Runtime/Core/FaceRebuildData.cs") state(2)
+Script is not up to date after domain reload: guid(2e82491da45686848bf17df39975ff3c) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorToolbarMenuItems.cs") state(2)
+Script is not up to date after domain reload: guid(89809d92ed2419a43b46b08b6f4237ba) path("Packages/com.unity.probuilder/Editor/EditorCore/VersionValidator.cs") state(2)
+Script is not up to date after domain reload: guid(2197ea2611109104aa25635ed7b59bcb) path("Packages/com.unity.probuilder/Editor/EditorCore/DestroyListener.cs") state(2)
+Script is not up to date after domain reload: guid(2e52c205e35f30d4c81ff62d3f94e234) path("Packages/com.unity.probuilder/Runtime/Core/HandleOrientation.cs") state(2)
+Script is not up to date after domain reload: guid(9e11b000caeb5451a8d9160606edb8e5) path("Packages/com.unity.probuilder/Runtime/Core/InternalUtility.cs") state(2)
+Script is not up to date after domain reload: guid(561f179dea8740f41a4a539592427f2b) path("Packages/com.unity.probuilder/Addons/Fbx.cs") state(2)
+Script is not up to date after domain reload: guid(bb4dcd11679b340ee8a7afb51cb0ccfc) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(1c567d9c5b825d24ba6a00bef45ec0dc) path("Packages/com.unity.probuilder/Runtime/Core/Changelog.cs") state(2)
+Script is not up to date after domain reload: guid(df3a4cb75c674491b6a359529d7fbd82) path("Packages/com.unity.probuilder/Editor/MenuActions/Interaction/ToggleDragSelectionMode.cs") state(2)
+Script is not up to date after domain reload: guid(7208f6e564fc928478322837a693d724) path("Packages/com.unity.probuilder/Editor/EditorCore/TooltipContent.cs") state(2)
+Script is not up to date after domain reload: guid(a88380604e5234adaa98158c5e10950c) path("Packages/com.unity.probuilder/Runtime/Core/HandleConstraint2D.cs") state(2)
+Script is not up to date after domain reload: guid(31b2d23ee6bb16a42bdc704a0b1df42c) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorHandleUtility.cs") state(2)
+Script is not up to date after domain reload: guid(daab597c96b98b840aff1e885c4ca0f0) path("Packages/com.unity.probuilder/Runtime/Core/SemVer.cs") state(2)
+Script is not up to date after domain reload: guid(a6bc50937fe34666940ca23931be5344) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/SetPivotToSelection.cs") state(2)
+Script is not up to date after domain reload: guid(dda436a9c8bbd4d109478acf25cd48d8) path("Packages/com.unity.probuilder/Runtime/Core/ColorPalette.cs") state(2)
+Script is not up to date after domain reload: guid(da5baec4bf414efb91d2253bef40dd19) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/SmartSubdivide.cs") state(2)
+Script is not up to date after domain reload: guid(b360b08870ee97249b28c408f0d1e0d8) path("Packages/com.unity.probuilder/Editor/EditorCore/FileUtility.cs") state(2)
+Script is not up to date after domain reload: guid(4ac8731d7c634e5489628370b54f476c) path("Packages/com.unity.probuilder/Runtime/Core/SharedVertex.cs") state(2)
+Script is not up to date after domain reload: guid(31c962280094e7146b53cd8abdfa5957) path("Packages/com.unity.progrids/Runtime/IgnoreSnap.cs") state(2)
+Script is not up to date after domain reload: guid(66b1c4a9ec825c7458f935aae34d66b1) path("Packages/com.unity.progrids/Editor/ToggleContent.cs") state(2)
+Script is not up to date after domain reload: guid(9b0cf5260e6d70b428dab29748b1b3fe) path("Packages/com.unity.probuilder/Runtime/Core/Normal.cs") state(2)
+Script is not up to date after domain reload: guid(87dbab7c5aec0498a8ef34d8490bc9f6) path("Packages/com.unity.probuilder/Editor/EditorCore/PositionRotateTool.cs") state(2)
+Script is not up to date after domain reload: guid(69fbd00be8d904b3da640e502905c345) path("Packages/com.unity.probuilder/Runtime/Core/Entity.cs") state(2)
+Script is not up to date after domain reload: guid(d3b407d7cf143004f8e7f9de0969d275) path("Packages/com.unity.progrids/Editor/ProGridsEnums.cs") state(2)
+Script is not up to date after domain reload: guid(71908286421424641b33861431bc9b9d) path("Packages/com.unity.probuilder/Runtime/Core/EdgeLookup.cs") state(2)
+Script is not up to date after domain reload: guid(3e99f90a32784f4d9ff62732e1265f23) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/SmartConnect.cs") state(2)
+Script is not up to date after domain reload: guid(9be31b6177ca0453e928692a20b33b2c) path("Packages/com.unity.probuilder/Runtime/MeshOperations/ElementSelection.cs") state(2)
+Script is not up to date after domain reload: guid(c42a9b51604094d6bbfebd218854a539) path("Packages/com.unity.probuilder/Runtime/Core/WingedEdgeEnumerator.cs") state(2)
+Script is not up to date after domain reload: guid(f41728d29935ac14ea77acad92405db0) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/OpenShapeEditorMenuItem.cs") state(2)
+Script is not up to date after domain reload: guid(d9ed04c4f3db58d488f75533eee62283) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/PriorityQueue.cs") state(2)
+Script is not up to date after domain reload: guid(2e8a07bcd05f44a0aa578517e042d91b) path("Packages/com.unity.probuilder/Runtime/Core/Bounds2D.cs") state(2)
+Script is not up to date after domain reload: guid(518e5a76add435648813be98dd71e2f8) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/HyperRect.cs") state(2)
+Script is not up to date after domain reload: guid(caa73878d8fb64ec1b9ba323a2158672) path("Packages/com.unity.probuilder/Runtime/MeshOperations/ExtrudeElements.cs") state(2)
+Script is not up to date after domain reload: guid(3e8bafb60e2ac40ef92c924f855c65b3) path("Packages/com.unity.probuilder/Runtime/Core/HandleUtility.cs") state(2)
+Script is not up to date after domain reload: guid(428fa7a76260b497d8306bc5162aa463) path("Packages/com.unity.probuilder/Editor/EditorCore/ProBuilderSnapSettings.cs") state(2)
+Script is not up to date after domain reload: guid(c8a5a39fbad44b97b5f27e8a2e28aecf) path("Packages/com.unity.probuilder/Editor/EditorCore/pb_ObjectArray.cs") state(2)
+Script is not up to date after domain reload: guid(171bb48d73467244c9487173c12e2c46) path("Packages/com.unity.probuilder/Editor/EditorCore/EntityVisibility.cs") state(2)
+Script is not up to date after domain reload: guid(4ce00895d9eb2924f8f0c484eb3879ce) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/SetTrigger.cs") state(2)
+Script is not up to date after domain reload: guid(40af14f295f2434f9cfda219da2645a0) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/OpenSmoothingEditor.cs") state(2)
+Script is not up to date after domain reload: guid(aac023407bdc9df4db32c6aa0c29ef25) path("Packages/com.unity.probuilder/Runtime/MeshOperations/MeshTransform.cs") state(2)
+Script is not up to date after domain reload: guid(98bb5d899143343ec8ccadebc268824c) path("Packages/com.unity.probuilder/Runtime/Core/ColorUtility.cs") state(2)
+Script is not up to date after domain reload: guid(bedfc9d5ebff70f4896001f60a9b2790) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/TriangulationUtil.cs") state(2)
+Script is not up to date after domain reload: guid(171420d62f80b4556a8833c039a00a3c) path("Packages/com.unity.probuilder/Runtime/Core/Smoothing.cs") state(2)
+Script is not up to date after domain reload: guid(59e0185ce9cbd4517a2762cb16e1f690) path("Packages/com.unity.probuilder/Runtime/MeshOperations/VertexEditing.cs") state(2)
+Script is not up to date after domain reload: guid(7b0368f3d533f4c379d9a83478864e0d) path("Packages/com.unity.probuilder/Runtime/Core/BezierShape.cs") state(2)
+Script is not up to date after domain reload: guid(709975e9e21e4a52a8ea44cd4a779feb) path("Packages/com.unity.probuilder/AssetIdRemapUtility/Editor/AssetTreeView.cs") state(2)
+Script is not up to date after domain reload: guid(7ea67431821494cfca380c0e07258751) path("Packages/com.unity.settings-manager/Editor/Attributes.cs") state(2)
+Script is not up to date after domain reload: guid(4d1e3d0e26dcfcb438a45fbbf9f23e92) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/CollapseVertices.cs") state(2)
+Script is not up to date after domain reload: guid(f9e45af82f3d1428f9ccc2ac15f74603) path("Packages/com.unity.probuilder/Editor/EditorCore/ProBuilderMeshEditor.cs") state(2)
+Script is not up to date after domain reload: guid(ac7a7f49f26f45b29857e71b0d156fff) path("Packages/com.unity.probuilder/Editor/MenuActions/Export/ExportPly.cs") state(2)
+Script is not up to date after domain reload: guid(b0c8bf4cfa4d461cb01b12bb9e3e42f9) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/DeleteFaces.cs") state(2)
+Script is not up to date after domain reload: guid(91e17c4725d568e4a8ade4766f774bfc) path("Packages/com.unity.progrids/Editor/Snapping.cs") state(2)
+Script is not up to date after domain reload: guid(9ec02f5604afd41069b873611f60c719) path("Packages/com.unity.progrids/Editor/ProGridsSettingsProvider.cs") state(2)
+Script is not up to date after domain reload: guid(a13a61fc9c33c4835beb1b3728c1718a) path("Packages/com.unity.probuilder/Editor/MenuActions/Interaction/ToggleHandlePivotPoint.cs") state(2)
+Script is not up to date after domain reload: guid(77656e4f6ab6544caa81cbd3e5784e03) path("Packages/com.unity.probuilder/Runtime/Core/RaycastHit.cs") state(2)
+Script is not up to date after domain reload: guid(2fa4bbd1a7ccee24783998770d56522e) path("Packages/com.unity.probuilder/AssetIdRemapUtility/Editor/AssetIdRemapEditor.cs") state(2)
+Script is not up to date after domain reload: guid(e8fa221ea996bd7459f869e6d809a95d) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/IKdTree.cs") state(2)
+Script is not up to date after domain reload: guid(add8532bafe747b88ea53556bd2e74e8) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/FlipObjectNormals.cs") state(2)
+Script is not up to date after domain reload: guid(172d21c82259a0c428b3924edd908358) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/DuplicateFaces.cs") state(2)
+Script is not up to date after domain reload: guid(08b58b81e1014e9a804abb4cd35c2eb3) path("Packages/com.unity.probuilder/Runtime/Core/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(5c72c2f0fd523463292dc6eeb1fd7ab0) path("Packages/com.unity.probuilder/Runtime/Core/Clipping.cs") state(2)
+Script is not up to date after domain reload: guid(3abdb0569285bbf4389d38655d5a90a3) path("Packages/com.unity.probuilder/Runtime/Core/PivotPoint.cs") state(2)
+Script is not up to date after domain reload: guid(563aeff009644264e815e6de1439e784) path("Packages/com.unity.probuilder/Editor/EditorCore/LicenseEditor.cs") state(2)
+Script is not up to date after domain reload: guid(eba60849bb2104e85af3d2e25b022196) path("Packages/com.unity.probuilder/Runtime/Core/Spline.cs") state(2)
+Script is not up to date after domain reload: guid(ffe60d522a0a4b0489a5bfe4bb6b4fb1) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectSmoothingGroup.cs") state(2)
+Script is not up to date after domain reload: guid(ff8eab1edc549c8489031e8b952c1b56) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorToolbarLoader.cs") state(2)
+Script is not up to date after domain reload: guid(9d6fbeb339bff0f4cb3744bd60aec40f) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/AdvancingFrontNode.cs") state(2)
+Script is not up to date after domain reload: guid(389ebe3277e864eb2bb6f14edb419a33) path("Packages/com.unity.probuilder/External/StlExporter/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(36dfd625ac38b4b62a04264b3819dc42) path("Packages/com.unity.probuilder/Runtime/Core/IntVec4.cs") state(2)
+Script is not up to date after domain reload: guid(4daa0ba8c6e93d54a9b542d76b235c55) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/Math/TypeMath.cs") state(2)
+Script is not up to date after domain reload: guid(4eb4b507ff52e40f58f68c2065e32636) path("Packages/com.unity.probuilder/Runtime/Core/TriggerBehaviour.cs") state(2)
+Script is not up to date after domain reload: guid(6420831531bc2054281143153f7d6659) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorSceneViewPicker.cs") state(2)
+Script is not up to date after domain reload: guid(a629cb73b331b40449fd411043caf7d3) path("Packages/com.unity.probuilder/External/CSG/Classes/VertexUtility.cs") state(2)
+Script is not up to date after domain reload: guid(e985069a91a74567a338b55beddbf74c) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/OpenUVEditor.cs") state(2)
+Script is not up to date after domain reload: guid(bdb300e663dad44ca9f0a74c96e6f937) path("Packages/com.unity.progrids/Editor/EditorUtility.cs") state(2)
+Script is not up to date after domain reload: guid(5cf10ee5e4b44eaca6e769bf235f7f5a) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/MirrorObjects.cs") state(2)
+Script is not up to date after domain reload: guid(48b3897a5481441a8c9468e28fd54c53) path("Packages/com.unity.probuilder/Editor/MenuActions/Export/ExportStlAscii.cs") state(2)
+Script is not up to date after domain reload: guid(c33579cdea5c8442e90e443cf7bcfee9) path("Packages/com.unity.probuilder/Editor/EditorCore/Version.cs") state(2)
+Script is not up to date after domain reload: guid(483554fdb1324da4ead26f33de2c9990) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/Math/FloatMath.cs") state(2)
+Script is not up to date after domain reload: guid(d47e951042beff44a9c47ab420266ffd) path("Packages/com.unity.probuilder/Editor/EditorCore/ShapeEditor.cs") state(2)
+Script is not up to date after domain reload: guid(9c90a3667d9b2154bb538feb303989f8) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepEdgeEvent.cs") state(2)
+Script is not up to date after domain reload: guid(9dc4bcf4f01eb4e34a13eb79da442b28) path("Packages/com.unity.progrids/Editor/ProGridsSceneToolbar.cs") state(2)
+Script is not up to date after domain reload: guid(24b30c1daa67ee44b81bb574fa122e05) path("Packages/com.unity.probuilder/Editor/EditorCore/ShortcutManager.cs") state(2)
+Script is not up to date after domain reload: guid(d1266b9f3f7ac478b97ce34f935eadc3) path("Packages/com.unity.probuilder/Editor/EditorCore/MeshAndElementSelection.cs") state(2)
+Script is not up to date after domain reload: guid(1cd423070c2f8094db80d14ac61e4a89) path("Packages/com.unity.probuilder/Runtime/Core/SelectionPickerRenderer.cs") state(2)
+Script is not up to date after domain reload: guid(2f90915a295ab524097b6e004b64d015) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorEnum.cs") state(2)
+Script is not up to date after domain reload: guid(d7bdf1318dc164d50a2e3c37cb09494a) path("Packages/com.unity.progrids/Tests/Editor/SnapOnAllAxes.cs") state(2)
+Script is not up to date after domain reload: guid(19fd4a6987194c66bf04e55e19aa466b) path("Packages/com.unity.probuilder/Editor/MenuActions/Interaction/ToggleDragRectMode.cs") state(2)
+Script is not up to date after domain reload: guid(c6d73444bb8cc9b468d5ff190d7de759) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/ConnectVertices.cs") state(2)
+Script is not up to date after domain reload: guid(b9ed23c5ac29d4227a634affc39ad4a4) path("Packages/com.unity.probuilder/Editor/EditorCore/PositionTool.cs") state(2)
+Script is not up to date after domain reload: guid(23bf380528bb14b24942fe9d5e5a3abc) path("Packages/com.unity.probuilder/Runtime/Core/Transform2D.cs") state(2)
+Script is not up to date after domain reload: guid(1edc484acd18fdb42b4421d1b707caaa) path("Packages/com.unity.probuilder/Editor/EditorCore/ToolbarGroup.cs") state(2)
+Script is not up to date after domain reload: guid(bb48793c33304c1ca4300c46c9c13b46) path("Packages/com.unity.probuilder/AssetIdRemapUtility/Editor/PackageImporter.cs") state(2)
+Script is not up to date after domain reload: guid(b2fe48040b5714c059f9d4a7796cafd7) path("Packages/com.unity.probuilder/Runtime/Core/TransformUtility.cs") state(2)
+Script is not up to date after domain reload: guid(a08405bf933b15f4882645f9cb359193) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorStyles.cs") state(2)
+Script is not up to date after domain reload: guid(cd9b9131766d54225a24d2221d1f49b5) path("Packages/com.unity.probuilder/Runtime/Core/IHasDefault.cs") state(2)
+Script is not up to date after domain reload: guid(a893ddeb6fc42463f9d81a87e03c8455) path("Packages/com.unity.probuilder/Runtime/Core/SelectionPickerSettings.cs") state(2)
+Script is not up to date after domain reload: guid(4c7381a66e715734f82749b2e115722c) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/IPriorityQueue.cs") state(2)
+Script is not up to date after domain reload: guid(d2c71b118edf0476f868fa213864aac6) path("Packages/com.unity.probuilder/Editor/EditorCore/Experimental.cs") state(2)
+Script is not up to date after domain reload: guid(d0b5cffbc2ad41cb84067b39dedada94) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/ProBuilderize.cs") state(2)
+Script is not up to date after domain reload: guid(a943be722733e6741978a775d47f8e2c) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepContext.cs") state(2)
+Script is not up to date after domain reload: guid(af7cbb59029d2420c960fa64da335888) path("Packages/com.unity.probuilder/Runtime/Core/SimpleTuple.cs") state(2)
+Script is not up to date after domain reload: guid(fc2e025c327cbba4ca8373dd8923ff88) path("Packages/com.unity.probuilder/External/Poly2Tri/Utility/FixedArray3.cs") state(2)
+Script is not up to date after domain reload: guid(2799d938bc097b0478b150b315487a18) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/Math/ITypeMath.cs") state(2)
+Script is not up to date after domain reload: guid(e4919131c75b7914b99be1a9252658bc) path("Packages/com.unity.probuilder/Editor/EditorCore/VertexManipulationTool.cs") state(2)
+Script is not up to date after domain reload: guid(0108f8c9cba0ec64cb96fa884a3478bd) path("Packages/com.unity.probuilder/Editor/EditorCore/ReflectionUtility.cs") state(2)
+Script is not up to date after domain reload: guid(2b3f77c5dfa698a478ad5d291674b8a5) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweep.cs") state(2)
+Script is not up to date after domain reload: guid(b38e0917ff1e4a54292a5137af265542) path("Packages/com.unity.probuilder/Editor/EditorCore/LightmapUVEditor.cs") state(2)
+Script is not up to date after domain reload: guid(bb7d601e6d679aa4dbd856d20dda3f74) path("Packages/com.unity.probuilder/Editor/EditorCore/LogEditor.cs") state(2)
+Script is not up to date after domain reload: guid(2b43eb0a521a4a6a90bde45149e1c656) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/OpenMaterialEditor.cs") state(2)
+Script is not up to date after domain reload: guid(c24f57f3f3c554e51ab791526e33e337) path("Packages/com.unity.settings-manager/Editor/UserSettings.cs") state(2)
+Script is not up to date after domain reload: guid(fcbb190e55f214989942c67a845676cf) path("Packages/com.unity.probuilder/Runtime/Core/Triangle.cs") state(2)
+Script is not up to date after domain reload: guid(92edb19c798910a47b4dec2660fcd96d) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Sets/ConstrainedPointSet.cs") state(2)
+Script is not up to date after domain reload: guid(f5f37a0a7c6f54d4995a8f0806351e89) path("Packages/com.unity.probuilder/Runtime/MeshOperations/UV/TextureStitching.cs") state(2)
+Script is not up to date after domain reload: guid(13a653f5b84336c45b2c00b570775a87) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/KdTree.cs") state(2)
+Script is not up to date after domain reload: guid(5e41f6d30b7fa6543a40193098cf4eae) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Util/PointGenerator.cs") state(2)
+Script is not up to date after domain reload: guid(29c44195d73b34ee98215150a8031c2c) path("Packages/com.unity.probuilder/Runtime/Core/ShapeGenerator.cs") state(2)
+Script is not up to date after domain reload: guid(53d27af1247a7d547aa00100fae732a0) path("Packages/com.unity.probuilder/Editor/MenuActions/Interaction/ToggleHandleOrientation.cs") state(2)
+Script is not up to date after domain reload: guid(7fd9f5ac1b5cea54386d6497a518c29f) path("Packages/com.unity.probuilder/Editor/EditorCore/TextureTool.cs") state(2)
+Script is not up to date after domain reload: guid(2a29f58947000b048a0347b48bd16304) path("Packages/com.unity.probuilder/Editor/EditorCore/ProBuilderSettings.cs") state(2)
+Script is not up to date after domain reload: guid(445a15c2908f1374a8aaad33541a66b2) path("Packages/com.unity.progrids/Tests/Runtime/IgnoreSnapInterface.cs") state(2)
+Script is not up to date after domain reload: guid(957c62bbae19ee54cb800714912d2a2a) path("Packages/com.unity.probuilder/Runtime/Core/ProBuilderMeshSelection.cs") state(2)
+Script is not up to date after domain reload: guid(2871f338d8894523bcde8a078df337c2) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/FillHole.cs") state(2)
+Script is not up to date after domain reload: guid(3b6cb19e1fd01b64487828605cda5643) path("Packages/com.unity.probuilder/Editor/EditorCore/ProBuilderSettingsProvider.cs") state(2)
+Script is not up to date after domain reload: guid(a0ae93cadae49f8488c27d0d40da0e99) path("Packages/com.unity.probuilder/Editor/EditorCore/Lightmapping.cs") state(2)
+Script is not up to date after domain reload: guid(23fb6d4a102f4c2188ef8afe61eb58e4) path("Packages/com.unity.probuilder/Editor/MenuActions/Export/ExportObj.cs") state(2)
+Script is not up to date after domain reload: guid(5963564d485624ab6ad4547f9451dbe6) path("Packages/com.unity.probuilder/Runtime/MeshOperations/MeshImporter.cs") state(2)
+Script is not up to date after domain reload: guid(1da3e972186d944ca81f7581615c650d) path("Packages/com.unity.probuilder/Runtime/Core/EdgeUtility.cs") state(2)
+Script is not up to date after domain reload: guid(fdadef59afbc0447793550ae30addc32) path("Packages/com.unity.probuilder/Runtime/Core/AutoUnwrapSettings.cs") state(2)
+Script is not up to date after domain reload: guid(8b2cff15c28de0f4ba38eafc29cd64fa) path("Packages/com.unity.progrids/Editor/PreferenceKeys.cs") state(2)
+Script is not up to date after domain reload: guid(d6658a80b0b3b964281a5312b39c9203) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepBasin.cs") state(2)
+Script is not up to date after domain reload: guid(92c923034fe494e2d83cc342e7f8020b) path("Packages/com.unity.probuilder/Runtime/Core/BezierPoint.cs") state(2)
+Script is not up to date after domain reload: guid(6f435ddc17924dd18782195e161766ae) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectHole.cs") state(2)
+Script is not up to date after domain reload: guid(5fb3641deade84f238d59ad03971b64c) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/OffsetElements.cs") state(2)
+Script is not up to date after domain reload: guid(4e7e1880876747d1823604bc506e3772) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/FlipFaceEdge.cs") state(2)
+Script is not up to date after domain reload: guid(22bc27ec00c948759f18d3b55ad227eb) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/OpenShapeEditor.cs") state(2)
+Script is not up to date after domain reload: guid(0c5b58425874c468e91bd42508d26f0b) path("Packages/com.unity.probuilder/Runtime/Core/Vertex.cs") state(2)
+Script is not up to date after domain reload: guid(3d263593a085cdf469778e9ea07ba483) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/ITriangulatable.cs") state(2)
+Script is not up to date after domain reload: guid(659601bba69c8e747bcc79ca9e877a2f) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/PointOnEdgeException.cs") state(2)
+Script is not up to date after domain reload: guid(8704e3cfa2526d34baf80d67fda2aa11) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectRing.cs") state(2)
+Script is not up to date after domain reload: guid(bb977b126bc1b4f15813dcf9da9bb600) path("Packages/com.unity.probuilder/Runtime/Core/PolyShape.cs") state(2)
+Script is not up to date after domain reload: guid(a9809eb838f424cce87ddc1b066c4f1a) path("Packages/com.unity.probuilder/Editor/EditorCore/PositionMoveTool.cs") state(2)
+Script is not up to date after domain reload: guid(13fe1d05e56c65b4ca8c935f648e6cbb) path("Packages/com.unity.probuilder/Runtime/Core/Normals.cs") state(2)
+Script is not up to date after domain reload: guid(ea5ea1cec364039478a51772a04726e0) path("Packages/com.unity.probuilder/Runtime/Core/UnwrapParameters.cs") state(2)
+Script is not up to date after domain reload: guid(158fff462a95744008bbad18ab5e029e) path("Packages/com.unity.probuilder/Runtime/MeshOperations/Bevel.cs") state(2)
+Script is not up to date after domain reload: guid(11887933ce4b13e4f9f5ec4163298397) path("Packages/com.unity.probuilder/Runtime/Core/ArrayUtility.cs") state(2)
+Script is not up to date after domain reload: guid(bed1bc9741072a14ebe8da808930d75b) path("Packages/com.unity.probuilder/Editor/EditorCore/ProBuilderMenuActionAttribute.cs") state(2)
+Script is not up to date after domain reload: guid(081df46fba1da4194b5f8c7fa73446e0) path("Packages/com.unity.probuilder/Runtime/MeshOperations/ConnectElements.cs") state(2)
+Script is not up to date after domain reload: guid(908a5a36f516c3048abadede5920d5d7) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/KdTreeNode.cs") state(2)
+Script is not up to date after domain reload: guid(4e5c2292defe6460881281240c415f3d) path("Packages/com.unity.probuilder/Runtime/Core/VectorHash.cs") state(2)
+Script is not up to date after domain reload: guid(5abceb5fc06c0954682d5b5addb0c3d4) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorHandleDrawing.cs") state(2)
+Script is not up to date after domain reload: guid(9d65f00b82160e14fb2ab9bb2d2108ae) path("Packages/com.unity.probuilder/Editor/EditorCore/PlyExporter.cs") state(2)
+Script is not up to date after domain reload: guid(2abd1512cbef74d89a4b0793e3ec970b) path("Packages/com.unity.probuilder/Runtime/MeshOperations/UV/AutoUvConversion.cs") state(2)
+Script is not up to date after domain reload: guid(b0c5bae1215e224409318f415e45db0a) path("Packages/com.unity.probuilder/Editor/EditorCore/EntityEditor.cs") state(2)
+Script is not up to date after domain reload: guid(a6f7622c6d6346cca3539de7b00556a7) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/SubdivideObject.cs") state(2)
+Script is not up to date after domain reload: guid(48a7fe196a624a7bae17c8621899b11c) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/SubdivideEdges.cs") state(2)
+Script is not up to date after domain reload: guid(c5b66ff70e896a64ebe5aa9cb28dd535) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/TriangulationAlgorithm.cs") state(2)
+Script is not up to date after domain reload: guid(2d65bb50aabd144ed9c1a4c2bc6d072e) path("Packages/com.unity.settings-manager/Editor/ValueWrapper.cs") state(2)
+Script is not up to date after domain reload: guid(b1602c6e6ff5bde4f9dfa91f8b5c85e4) path("Packages/com.unity.probuilder/Editor/EditorCore/UnityScenePostProcessor.cs") state(2)
+Script is not up to date after domain reload: guid(a931ba2bdb160804eb3438f28aa0def3) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorGUIUtility.cs") state(2)
+Script is not up to date after domain reload: guid(9cfc7aced6c45c0499ba73f07e633bac) path("Packages/com.unity.probuilder/External/StlExporter/Code/pb_Stl_Exporter.cs") state(2)
+Script is not up to date after domain reload: guid(914c2d056412b4f1ca64740fc2cb1c66) path("Packages/com.unity.probuilder/Runtime/Core/PreferenceKeys.cs") state(2)
+Script is not up to date after domain reload: guid(018f1adb8258a4133b73805294498947) path("Packages/com.unity.settings-manager/Tests/Editor/MultipleProjectSettings.cs") state(2)
+Script is not up to date after domain reload: guid(6367e9291991f466897f892a41dd75ff) path("Packages/com.unity.progrids/Editor/GridRenderer.cs") state(2)
+Script is not up to date after domain reload: guid(599cab2fb037142fd9fe246b0b364bc1) path("Packages/com.unity.probuilder/Runtime/Core/ProGridsIgnoreSnap.cs") state(2)
+Script is not up to date after domain reload: guid(7aeb98aaff5054383b10b45f4518f968) path("Packages/com.unity.probuilder/External/CSG/Classes/VertexAttributes.cs") state(2)
+Script is not up to date after domain reload: guid(f6274bb00b150de45a17cdf581bc41f5) path("Packages/com.unity.probuilder/Editor/EditorCore/VertexPositionEditor.cs") state(2)
+Script is not up to date after domain reload: guid(e8f0035a190335d408067f4bda8fbb49) path("Packages/com.unity.probuilder/Editor/EditorCore/ScriptingSymbolManager.cs") state(2)
+Script is not up to date after domain reload: guid(c23e2e2798e8047eabd581579b050162) path("Packages/com.unity.probuilder/Runtime/Core/SerializationUtility.cs") state(2)
+Script is not up to date after domain reload: guid(c4897f4be94b09d4a90eb6a4d9b85c55) path("Packages/com.unity.probuilder/Editor/EditorCore/HierarchyListener.cs") state(2)
+Script is not up to date after domain reload: guid(a2c22c8685df2d44b943673a11597711) path("Packages/com.unity.probuilder/External/KdTree/KdTreeLib/Math/DoubleMath.cs") state(2)
+Script is not up to date after domain reload: guid(b6cb3471ccbde8148a2b76fa987fa0a8) path("Packages/com.unity.progrids/Editor/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(42d1d51e272f34868beefb1d9a2688f6) path("Packages/com.unity.probuilder/Runtime/Core/ProBuilderEnum.cs") state(2)
+Script is not up to date after domain reload: guid(90c015bd1316c423b9aad70704f602ff) path("Packages/com.unity.probuilder/External/CSG/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(4891ddee861208843a4495ed6e404a57) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorGUILayout.cs") state(2)
+Script is not up to date after domain reload: guid(e74c868e28c92e84abb0ae91f8496d26) path("Packages/com.unity.probuilder/External/Poly2Tri/Utility/FixedBitArray3.cs") state(2)
+Script is not up to date after domain reload: guid(8b73fbc8867750541be154ed40569dea) path("Packages/com.unity.probuilder/Editor/EditorCore/HandleGUI.cs") state(2)
+Script is not up to date after domain reload: guid(d9e3db3de6fd8480bb4e763ca2dcbe03) path("Packages/com.unity.probuilder/Runtime/MeshOperations/MergeElements.cs") state(2)
+Script is not up to date after domain reload: guid(192dd82c3ebd3b647ae292174a2f36a6) path("Packages/com.unity.progrids/Editor/IconUtility.cs") state(2)
+Script is not up to date after domain reload: guid(c3ec6d10638d94feaa03c223b6fee2cc) path("Packages/com.unity.settings-manager/Editor/UserSetting.cs") state(2)
+Script is not up to date after domain reload: guid(c6624e07ef7bd4f379420666341dd539) path("Packages/com.unity.probuilder/Editor/EditorCore/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(736319124efd40fda31c36ae2599181a) path("Packages/com.unity.probuilder/Editor/MenuActions/Export/Export.cs") state(2)
+Script is not up to date after domain reload: guid(d9930631c9404fb0b63a91644558eb39) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/DetachFaces.cs") state(2)
+Script is not up to date after domain reload: guid(eace57ffc03f348e48d541e3ac67ae90) path("Packages/com.unity.probuilder/External/CSG/Classes/Vertex.cs") state(2)
+Script is not up to date after domain reload: guid(2fa1f4bc90f143d5acde8c0a1e024a61) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/NewPolyShape.cs") state(2)
+Script is not up to date after domain reload: guid(ab8e2d6a92a04e42baab6202f8650fb3) path("Packages/com.unity.probuilder/Runtime/MeshOperations/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(6d247d7d3f9b23a468d61e433994dd7b) path("Packages/com.unity.probuilder/Runtime/MeshOperations/AppendElements.cs") state(2)
+Script is not up to date after domain reload: guid(add27a30fc9c74bb48a111f8b27c2c8a) path("Packages/com.unity.progrids/Editor/MenuItems.cs") state(2)
+Script is not up to date after domain reload: guid(d123c179cb7a941d0993a60fe2e20cff) path("Packages/com.unity.probuilder/Editor/EditorCore/VertexManipulationToolSettings.cs") state(2)
+Script is not up to date after domain reload: guid(916d519062254e79b6adc87200d2c142) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/ConformObjectNormals.cs") state(2)
+Script is not up to date after domain reload: guid(bb36fee1f817e4860a9937f064b1a192) path("Packages/com.unity.probuilder/Runtime/MeshOperations/CombineMeshes.cs") state(2)
+Script is not up to date after domain reload: guid(e6d7500d036914f3b9768689959295b4) path("Packages/com.unity.probuilder/External/Poly2Tri/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(d540a5c12642c5e40ba3b88fc8ae6c50) path("Packages/com.unity.probuilder/Editor/EditorCore/TooltipEditor.cs") state(2)
+Script is not up to date after domain reload: guid(848eabc153ab891409f3d562463a0efe) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/TriangulationContext.cs") state(2)
+Script is not up to date after domain reload: guid(a9ea06f47bdbe427294162ab3d8e4ef3) path("Packages/com.unity.probuilder/Runtime/MeshOperations/InternalMeshUtility.cs") state(2)
+Script is not up to date after domain reload: guid(a84ca2d947f34a09bd44bc592e22d49c) path("Packages/com.unity.probuilder/AssetIdRemapUtility/Editor/AssemblyInfo.cs") state(2)
+Script is not up to date after domain reload: guid(eff25082b866e6d468d04fc8a3f22e71) path("Packages/com.unity.probuilder/Editor/EditorCore/MenuActionStyles.cs") state(2)
+Script is not up to date after domain reload: guid(d4e65de48089c1f428c3752b69114f23) path("Packages/com.unity.progrids/Editor/Version.cs") state(2)
+Script is not up to date after domain reload: guid(4bddc56d76fd9ac49afc63c7dc797ace) path("Packages/com.unity.progrids/Tests/Editor/ReflectedMethodExist.cs") state(2)
+Script is not up to date after domain reload: guid(a581c9a381f68455db0779169a94180c) path("Packages/com.unity.probuilder/Runtime/Core/SelectionModifierBehaviour.cs") state(2)
+Script is not up to date after domain reload: guid(f3ab6033657acd04e93e395ba82570ef) path("Packages/com.unity.probuilder/Editor/EditorCore/ConfigurableWindow.cs") state(2)
+Script is not up to date after domain reload: guid(4ce1c67454d65d14eb3eae2f44b0ffa7) path("Packages/com.unity.probuilder/AssetIdRemapUtility/Editor/AssetId.cs") state(2)
+Script is not up to date after domain reload: guid(5f130a448e6f0cc45bacc05a4653fc41) path("Packages/com.unity.probuilder/Runtime/Core/SelectionPickerRendererHDRP.cs") state(2)
+Script is not up to date after domain reload: guid(1113544478cee6a4caafac0b3b7a06f1) path("Packages/com.unity.probuilder/Runtime/Core/MeshHandle.cs") state(2)
+Script is not up to date after domain reload: guid(b7bd43b2e3e547199420eec1d903ff30) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/BevelEdges.cs") state(2)
+Script is not up to date after domain reload: guid(cc6c734d87394ef99cf62171eb6fe416) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/FreezeTransform.cs") state(2)
+Script is not up to date after domain reload: guid(a91947f03a49147a49e5f05ea5737edc) path("Packages/com.unity.probuilder/Runtime/Core/Log.cs") state(2)
+Script is not up to date after domain reload: guid(cd4d30ee1f2db48c6be97ed8d2fc9da4) path("Packages/com.unity.probuilder/Runtime/Core/EntityBehaviour.cs") state(2)
+Script is not up to date after domain reload: guid(fe5e031b8d5fd9d43b054ae08c843652) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepDebugContext.cs") state(2)
+Script is not up to date after domain reload: guid(943eceaffe7b13b43bc1b1c129082f62) path("Packages/com.unity.probuilder/Runtime/Core/VertexPositioning.cs") state(2)
+Script is not up to date after domain reload: guid(51cb791f07b14fc08dd10dd56890d5c0) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectMaterial.cs") state(2)
+Script is not up to date after domain reload: guid(267c7f09b45427d4596b29d4c39055fa) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/TriangulationPoint.cs") state(2)
+Script is not up to date after domain reload: guid(b300db76e48084b5680ab36214d3bea3) path("Packages/com.unity.probuilder/Runtime/MeshOperations/DeleteElements.cs") state(2)
+Script is not up to date after domain reload: guid(5f3c839e57094cf6b2e99af5515b2ca0) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/SelectEdgeLoop.cs") state(2)
+Script is not up to date after domain reload: guid(a4bb8ac278d3433ca7313bb5f90a2c52) path("Packages/com.unity.probuilder/Editor/MenuActions/Selection/ShrinkSelection.cs") state(2)
+Script is not up to date after domain reload: guid(ed8e5003f1d14f718326765fbb042572) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/NewBezierShape.cs") state(2)
+Script is not up to date after domain reload: guid(38d00192cfb7943ebaa2898af4577852) path("Packages/com.unity.probuilder/Runtime/Core/SelectionPicker.cs") state(2)
+Script is not up to date after domain reload: guid(9eda47df4ab94d8a8174832a11359a8a) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/ConnectEdges.cs") state(2)
+Script is not up to date after domain reload: guid(485f27eb54532614d89e7e2dc5c9aebc) path("Packages/com.unity.progrids/Editor/SnapSettings.cs") state(2)
+Script is not up to date after domain reload: guid(efd5cca1cb8dabd418d215e770d3fb01) path("Packages/com.unity.probuilder/Runtime/Core/VectorMask.cs") state(2)
+Script is not up to date after domain reload: guid(6c262c1329a02fa49b5cb4c297106f3f) path("Packages/com.unity.probuilder/Editor/EditorCore/ProBuilderEditor.cs") state(2)
+Script is not up to date after domain reload: guid(4746bcae5f2c20c4db633d37d4a2901d) path("Packages/com.unity.probuilder/Editor/EditorCore/EntityUtility.cs") state(2)
+Script is not up to date after domain reload: guid(2efa3d03c26294747aaa61c2a09ac41f) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepConstraint.cs") state(2)
+Script is not up to date after domain reload: guid(7ebc93f048090074f80a100718d5a585) path("Packages/com.unity.probuilder/Editor/EditorCore/TextureMoveTool.cs") state(2)
+Script is not up to date after domain reload: guid(a0ed74e97865f42cfbce844278aa8b52) path("Packages/com.unity.probuilder/Runtime/MeshOperations/UV/UVEditing.cs") state(2)
+Script is not up to date after domain reload: guid(22ff4377d8be47cdacb8aefc715b08c4) path("Packages/com.unity.progrids/Editor/Defaults.cs") state(2)
+Script is not up to date after domain reload: guid(3f1ca63a91b17724bbd99c8fa67e0180) path("Packages/com.unity.probuilder/Editor/EditorCore/MaterialPalette.cs") state(2)
+Script is not up to date after domain reload: guid(f7416643c114b4cb0a56b828ccee4932) path("Packages/com.unity.probuilder/Runtime/Core/Shortcut.cs") state(2)
+Script is not up to date after domain reload: guid(08c8ab0f8013d492eb6d0d78a261f745) path("Packages/com.unity.probuilder/Runtime/MeshOperations/Subdivision.cs") state(2)
+Script is not up to date after domain reload: guid(c8e7f2a60420444ba31322510285d625) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/OpenVertexColorEditor.cs") state(2)
+Script is not up to date after domain reload: guid(460d1e5b4c054bfc8d012b87f9960bb9) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/CenterPivot.cs") state(2)
+Script is not up to date after domain reload: guid(53aa5497892312842a4c059529cd2397) path("Packages/com.unity.probuilder/External/Poly2Tri/Triangulation/Delaunay/Sweep/AdvancingFront.cs") state(2)
+Script is not up to date after domain reload: guid(a34d12b3d3eeda641bac82627738a726) path("Packages/com.unity.probuilder/External/Poly2Tri/Polygon/PolygonPoint.cs") state(2)
+Script is not up to date after domain reload: guid(08ab9a4e4186d164cb67bda77d36ff4c) path("Packages/com.unity.probuilder/Editor/EditorCore/PreferenceDictionaryEditor.cs") state(2)
+Script is not up to date after domain reload: guid(e72ef48ce83a1ef4c9757c374633ea12) path("Packages/com.unity.probuilder/Editor/EditorCore/SceneDragAndDropListener.cs") state(2)
+Script is not up to date after domain reload: guid(9be09300178708d4aaa608eed9697f1c) path("Packages/com.unity.probuilder/Editor/EditorCore/MaterialEditor.cs") state(2)
+Script is not up to date after domain reload: guid(7dc1dc9c919fa434c915ad64201952dd) path("Packages/com.unity.probuilder/External/StlExporter/Code/pb_Stl_Importer.cs") state(2)
+Script is not up to date after domain reload: guid(09410b7978d32924c90d84fa25a07f4a) path("Packages/com.unity.probuilder/External/Poly2Tri/P2T.cs") state(2)
+Script is not up to date after domain reload: guid(aa15474f4b771974c86469106f4a4cb3) path("Packages/com.unity.probuilder/Editor/EditorCore/PolyShapeEditor.cs") state(2)
+Script is not up to date after domain reload: guid(e91b0af086a401648866099dfaf3e377) path("Packages/com.unity.probuilder/Editor/EditorCore/ProGridsInterface.cs") state(2)
+Script is not up to date after domain reload: guid(bec5fadb27a8bd249a3d1051e2e8f970) path("Packages/com.unity.probuilder/Editor/EditorCore/MeshSelection.cs") state(2)
+Script is not up to date after domain reload: guid(74e7658b6a583464fa496ffe540ef91f) path("Packages/com.unity.probuilder/Editor/EditorCore/AutoUVEditor.cs") state(2)
+Script is not up to date after domain reload: guid(bdc593ceb4be46bfab31b9c445ec89a2) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/SubdivideFaces.cs") state(2)
+Script is not up to date after domain reload: guid(f7ba37814af43bf41810a98b5811dee1) path("Packages/com.unity.progrids/Tests/Editor/IgnoreInterfaceIsRespected.cs") state(2)
+Script is not up to date after domain reload: guid(3a73369e033539a42ae8067a8fa967c0) path("Packages/com.unity.probuilder/External/Poly2Tri/Polygon/PolygonSet.cs") state(2)
+Script is not up to date after domain reload: guid(52ebe52d390074084bebc0878e3f74b6) path("Packages/com.unity.probuilder/External/CSG/Classes/Polygon.cs") state(2)
+Script is not up to date after domain reload: guid(2665d2fb2b90b4916bfb3868cda99ea3) path("Packages/com.unity.probuilder/External/CSG/Classes/Plane.cs") state(2)
+Script is not up to date after domain reload: guid(cf31008f4dc1fb548a315685bb054730) path("Packages/com.unity.probuilder/Runtime/Core/SelectPathFaces.cs") state(2)
+Script is not up to date after domain reload: guid(1fdc9faa599347a3b697e785ac4719b3) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/ConformFaceNormals.cs") state(2)
+Script is not up to date after domain reload: guid(c851f089cbc73c141be8cc62b5dc057a) path("Packages/com.unity.probuilder/Editor/MenuActions/Editors/OpenLightmapUVEditor.cs") state(2)
+Script is not up to date after domain reload: guid(767365db77168f744af8685807ad7f4b) path("Packages/com.unity.settings-manager/Tests/Editor/SettingsTests.cs") state(2)
+Script is not up to date after domain reload: guid(67c0fca06520e4f78923163f9541ba6c) path("Packages/com.unity.settings-manager/Editor/SettingsDictionary.cs") state(2)
+Script is not up to date after domain reload: guid(244d57cf7fd6842e19000793e2bbac4e) path("Packages/com.unity.progrids/Tests/Editor/IgnoreAttributeIsRespected.cs") state(2)
+Script is not up to date after domain reload: guid(0c114c138e13b8248ae37c8cf12c6979) path("Packages/com.unity.probuilder/Editor/EditorCore/StripProBuilderScripts.cs") state(2)
+Script is not up to date after domain reload: guid(b3983d7c6b954ee69e23e75009a8b81d) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/TriangulateObject.cs") state(2)
+Script is not up to date after domain reload: guid(2347b9342bafaa845b0b25387d6fa381) path("Packages/com.unity.probuilder/Runtime/Core/SelectionPickerRendererStandard.cs") state(2)
+Script is not up to date after domain reload: guid(223e1a5330ab8468782152a65e857f94) path("Packages/com.unity.settings-manager/Editor/SettingsGUILayout.cs") state(2)
+Script is not up to date after domain reload: guid(19a8719bbc0e11f46b9cd7b9debdfc12) path("Packages/com.unity.progrids/Editor/Preferences.cs") state(2)
+Script is not up to date after domain reload: guid(214db8084d63e06499f41c215a8547a4) path("Packages/com.unity.probuilder/Runtime/MeshOperations/SurfaceTopology.cs") state(2)
+Script is not up to date after domain reload: guid(c339ea7067e6fcd459cb4eac2f0dafb1) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/SplitVertices.cs") state(2)
+Script is not up to date after domain reload: guid(8233d90336aea43098adf6dbabd606a2) path("Packages/com.unity.probuilder/Runtime/Core/ProBuilderMesh.cs") state(2)
+Script is not up to date after domain reload: guid(752d48e9eaa76c54ba0ff161eff2a3f2) path("Packages/com.unity.probuilder/Editor/MenuActions/Object/GenerateUV2.cs") state(2)
+Script is not up to date after domain reload: guid(5b6fe112f5d10423ab960f97d7b6e699) path("Packages/com.unity.probuilder/External/CSG/Classes/Node.cs") state(2)
+Script is not up to date after domain reload: guid(b04279a9fe7348798c260ea6516c1a4c) path("Packages/com.unity.probuilder/Editor/MenuActions/Export/ExportStlBinary.cs") state(2)
+Script is not up to date after domain reload: guid(c9e17f9cc89704707b15d2340fd8a585) path("Packages/com.unity.probuilder/Editor/EditorCore/MenuActionShortcutAttribute.cs") state(2)
+Script is not up to date after domain reload: guid(50a4f82d9b25145fb91d03a7bef21d24) path("Packages/com.unity.probuilder/Editor/EditorCore/EditorHandleDrawingScopes.cs") state(2)
+Script is not up to date after domain reload: guid(a62bb434134faa6439b1998669525768) path("Packages/com.unity.probuilder/Editor/MenuActions/Geometry/WeldVertices.cs") state(2)
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1092 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.0 MB.
+System memory in use after: 57.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1538.
+Total: 1.875200 ms (FindLiveObjects: 0.159500 ms CreateObjectMapping: 0.032500 ms MarkObjects: 1.623700 ms  DeleteObjects: 0.058200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000715 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.857 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1483 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.4 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1910.
+Total: 4.226900 ms (FindLiveObjects: 0.257700 ms CreateObjectMapping: 0.059700 ms MarkObjects: 2.506700 ms  DeleteObjects: 1.400800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3088.550645 seconds.
+  path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets
+  artifactKey: Guid(3ed28051c80a1394bbf05fabb2b1b02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets using Guid(3ed28051c80a1394bbf05fabb2b1b02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0ff9ed3a995b96b6406132b1c39230') in 0.011008 seconds
+  Import took 0.014214 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000763 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.984 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1482 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.4 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1912.
+Total: 4.143300 ms (FindLiveObjects: 0.220900 ms CreateObjectMapping: 0.046600 ms MarkObjects: 2.319200 ms  DeleteObjects: 1.554200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.933730 seconds.
+  path: Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial
+  artifactKey: Guid(d206abfdd01eab744bc3ba138e3bd0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial using Guid(d206abfdd01eab744bc3ba138e3bd0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '993ab59999efd61b2d086ae988dedb12') in 0.010216 seconds
+  Import took 0.013289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.971422 seconds.
+  path: Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/Prefabs
+  artifactKey: Guid(ff14c7071bdff4a41b8fee35ea7b165e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/Prefabs using Guid(ff14c7071bdff4a41b8fee35ea7b165e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1f8400e8396668da9b9eeeef9dd95c') in 0.007029 seconds
+  Import took 0.009891 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000737 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.995 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1482 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.5 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1914.
+Total: 3.990600 ms (FindLiveObjects: 0.213900 ms CreateObjectMapping: 0.054300 ms MarkObjects: 2.145700 ms  DeleteObjects: 1.575800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.733846 seconds.
+  path: Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/SampleScenes/SciFi_Industrial_Decor_PrefabLayout.unity
+  artifactKey: Guid(4d6db1fd5d744ff4dab943c3379e98e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/SampleScenes/SciFi_Industrial_Decor_PrefabLayout.unity using Guid(4d6db1fd5d744ff4dab943c3379e98e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50299475ce7e89e4210fe15612b27243') in 0.010797 seconds
+  Import took 0.013606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005512 seconds.
+  path: Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/SampleScenes/SciFi_Industrial_Decor_PrefabLayout.unity
+  artifactKey: Guid(4d6db1fd5d744ff4dab943c3379e98e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/SampleScenes/SciFi_Industrial_Decor_PrefabLayout.unity using Guid(4d6db1fd5d744ff4dab943c3379e98e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50299475ce7e89e4210fe15612b27243') in 0.002399 seconds
+  Import took 0.005824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.978829 seconds.
+  path: Assets/_Scenes/SampleScenes/SciFi_Industrial_Props_PrefabLayout.unity
+  artifactKey: Guid(9180836ea050808469d29101e57bbc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scenes/SampleScenes/SciFi_Industrial_Props_PrefabLayout.unity using Guid(9180836ea050808469d29101e57bbc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ba8818e578318c3518fbd9adcb3150') in 0.007352 seconds
+  Import took 0.010094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.517127 seconds.
+  path: Assets/_Scenes/SampleScenes/SciFi_Industrial_SampleLayout.unity
+  artifactKey: Guid(b2fa8882363c4644b93046de18bcbf19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scenes/SampleScenes/SciFi_Industrial_SampleLayout.unity using Guid(b2fa8882363c4644b93046de18bcbf19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53486a786bf0613b81cfe15337e7bccf') in 0.006975 seconds
+  Import took 0.009762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.784902 seconds.
+  path: Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Readme.asset
+  artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f47905e23affdc067239d1e5866366') in 0.048122 seconds
+  Import took 0.050945 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000701 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.956 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1482 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.6 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1916.
+Total: 4.098900 ms (FindLiveObjects: 0.192400 ms CreateObjectMapping: 0.045200 ms MarkObjects: 2.210800 ms  DeleteObjects: 1.648800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.336697 seconds.
+  path: Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Scripts
+  artifactKey: Guid(1f545d0b97525424eb52e33ae79e86cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Scripts using Guid(1f545d0b97525424eb52e33ae79e86cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b75741dca279cd60192a1dd5b1c746') in 0.009867 seconds
+  Import took 0.012875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005510 seconds.
+  path: Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Scripts
+  artifactKey: Guid(1f545d0b97525424eb52e33ae79e86cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Scripts using Guid(1f545d0b97525424eb52e33ae79e86cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b75741dca279cd60192a1dd5b1c746') in 0.002569 seconds
+  Import took 0.005799 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000640 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.015 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1483 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.7 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1919.
+Total: 4.423900 ms (FindLiveObjects: 0.375900 ms CreateObjectMapping: 0.104400 ms MarkObjects: 2.275800 ms  DeleteObjects: 1.666200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 543.997385 seconds.
+  path: Assets/Drone_Guard/Mateial/Drone_Guard.mat
+  artifactKey: Guid(c3b1e43eca5a9d24ab5ad5c3b825d40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Mateial/Drone_Guard.mat using Guid(c3b1e43eca5a9d24ab5ad5c3b825d40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d118978995a9c606fb3d67538bdf39') in 0.688677 seconds
+  Import took 0.692363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.044855 seconds.
+  path: Assets/Drone_Guard/Model/Drone_Guard.fbx
+  artifactKey: Guid(5090c1d92c3e3034a85460b495fcf820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Model/Drone_Guard.fbx using Guid(5090c1d92c3e3034a85460b495fcf820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f16880c26e8d447ecb35f2c927c3c08') in 0.322006 seconds
+  Import took 0.325755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.134769 seconds.
+  path: Assets/Drone_Guard/Prefab/Drone_Guard Variant.prefab
+  artifactKey: Guid(a173bd2fde7592c45a08444c8fc77508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Prefab/Drone_Guard Variant.prefab using Guid(a173bd2fde7592c45a08444c8fc77508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237152ece7c6387004c99fbf9055812b') in 0.066257 seconds
+  Import took 0.070119 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000683 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.961 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 85.6 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 1964.
+Total: 5.186900 ms (FindLiveObjects: 0.308400 ms CreateObjectMapping: 0.073500 ms MarkObjects: 2.987400 ms  DeleteObjects: 1.816100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.794271 seconds.
+  path: Assets/Drone_Guard/Scene/DemoScene
+  artifactKey: Guid(56e80a0b5678a594aaa36c651d98be98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Scene/DemoScene using Guid(56e80a0b5678a594aaa36c651d98be98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37335a53119944fd3fe44e012897d30f') in 0.009040 seconds
+  Import took 0.012045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005816 seconds.
+  path: Assets/Drone_Guard/Scene/DemoScene
+  artifactKey: Guid(56e80a0b5678a594aaa36c651d98be98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Scene/DemoScene using Guid(56e80a0b5678a594aaa36c651d98be98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37335a53119944fd3fe44e012897d30f') in 0.002201 seconds
+  Import took 0.005077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.358789 seconds.
+  path: Assets/Drone_Guard/Scene/DemoScene/LightingData.asset
+  artifactKey: Guid(3f64fedef9cc12647adea6b9a4b9058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Scene/DemoScene/LightingData.asset using Guid(3f64fedef9cc12647adea6b9a4b9058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73eeb9f9660b121663dcabdbfcb679be') in 0.008448 seconds
+  Import took 0.011436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003861 seconds.
+  path: Assets/Drone_Guard/Scene/DemoScene/ReflectionProbe-0.exr
+  artifactKey: Guid(72aca5ce556640f42a5876a8e9f87522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Scene/DemoScene/ReflectionProbe-0.exr using Guid(72aca5ce556640f42a5876a8e9f87522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebca69d7ec7b9024135e8438f50acaee') in 0.080302 seconds
+  Import took 0.083204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Drone_Guard/Scene/DemoScene/ReflectionProbe-1.exr
+  artifactKey: Guid(79ef6ce16d9a27a42917d057d9fe84bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Scene/DemoScene/ReflectionProbe-1.exr using Guid(79ef6ce16d9a27a42917d057d9fe84bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733a3494350b8e03083cd33915a3cc84') in 0.020498 seconds
+  Import took 0.023322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.033356 seconds.
+  path: Assets/_Scenes/SampleScenes/SciFi_Industrial_SampleLayout/NavMesh.asset
+  artifactKey: Guid(163061fb337595e4781453ef6ee46ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scenes/SampleScenes/SciFi_Industrial_SampleLayout/NavMesh.asset using Guid(163061fb337595e4781453ef6ee46ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc40cb7b668590dbeda0b94d11caa50') in 0.008199 seconds
+  Import took 0.011107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.987018 seconds.
+  path: Assets/Drone_Guard/Textures/Drone_Guard_Albedo.png
+  artifactKey: Guid(7dee460757f3634479d08a40dd19cde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Textures/Drone_Guard_Albedo.png using Guid(7dee460757f3634479d08a40dd19cde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47cf3829b9f57730446a10488a6bb466') in 0.070306 seconds
+  Import took 0.073234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Drone_Guard/Textures/Drone_Guard_Emission.png
+  artifactKey: Guid(578d51efa4c69fe44918d4f1f093c0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Textures/Drone_Guard_Emission.png using Guid(578d51efa4c69fe44918d4f1f093c0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482605cace5a9f9ef1a1da984fb8f707') in 0.016330 seconds
+  Import took 0.019036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Drone_Guard/Textures/Drone_Guard_MetallicSmoothness.png
+  artifactKey: Guid(66437def41880b942aee7db80a4d5ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Textures/Drone_Guard_MetallicSmoothness.png using Guid(66437def41880b942aee7db80a4d5ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34fd858c89fe99c68881ce40e66211c') in 0.017941 seconds
+  Import took 0.020889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Drone_Guard/Textures/Drone_Guard_Normal.png
+  artifactKey: Guid(dcdd5e899673b004c9283aea696a4308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drone_Guard/Textures/Drone_Guard_Normal.png using Guid(dcdd5e899673b004c9283aea696a4308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0b2083fa68bf7c67c31bc7dfcede06') in 0.036313 seconds
+  Import took 0.038997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.020473 seconds.
+  path: Assets/TetraArts/Lowpoly Ninja
+  artifactKey: Guid(883ce41dc83993c4f90ca4535e243a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TetraArts/Lowpoly Ninja using Guid(883ce41dc83993c4f90ca4535e243a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b150d905d56565682490f8b4e5360275') in 0.010162 seconds
+  Import took 0.013732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001437 seconds.
+  path: Assets/TetraArts/Lowpoly Ninja
+  artifactKey: Guid(883ce41dc83993c4f90ca4535e243a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TetraArts/Lowpoly Ninja using Guid(883ce41dc83993c4f90ca4535e243a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b150d905d56565682490f8b4e5360275') in 0.002290 seconds
+  Import took 0.005112 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000711 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.941 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1481 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.5 MB.
+System memory in use after: 85.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 1972.
+Total: 3.926900 ms (FindLiveObjects: 0.219000 ms CreateObjectMapping: 0.055500 ms MarkObjects: 2.058200 ms  DeleteObjects: 1.593000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.340667 seconds.
+  path: Assets/Materials/Materials/Black Metal_snaps002.mat
+  artifactKey: Guid(528bab4d959abd8438a427ca2334205f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Black Metal_snaps002.mat using Guid(528bab4d959abd8438a427ca2334205f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9068ab748b5ef0fb4ebb5943bd163b') in 0.068080 seconds
+  Import took 0.071113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Materials/Materials/Brown_snaps002.mat
+  artifactKey: Guid(2c0bb951fb8a2e44a9fb35bc4af3d739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Brown_snaps002.mat using Guid(2c0bb951fb8a2e44a9fb35bc4af3d739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da587c9fd82a71bd5377ec670735fde') in 0.017071 seconds
+  Import took 0.020087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Materials/Materials/Blue_snaps002.mat
+  artifactKey: Guid(04076a8ba5c805c409251912da22b641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Blue_snaps002.mat using Guid(04076a8ba5c805c409251912da22b641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c718ef427428a9f7f72d87c8d51c90c') in 0.021235 seconds
+  Import took 0.024412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Materials/Materials/Black Plastic_snaps002.mat
+  artifactKey: Guid(7332bdaf1f2a0394ea703cbaf96db22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Black Plastic_snaps002.mat using Guid(7332bdaf1f2a0394ea703cbaf96db22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231b8f03c8c01c8cb6bf293375404f86') in 0.019477 seconds
+  Import took 0.022528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Materials/Materials/BlueWindow_snaps002.mat
+  artifactKey: Guid(50e8d87218c9f9649975e35ca3232d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/BlueWindow_snaps002.mat using Guid(50e8d87218c9f9649975e35ca3232d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a031a563a01c945b927a05c4c358ed3f') in 0.017360 seconds
+  Import took 0.020426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Materials/Materials/BrownDark_snaps002.mat
+  artifactKey: Guid(019b68caeea34ac4bb7e667c4f32c5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/BrownDark_snaps002.mat using Guid(019b68caeea34ac4bb7e667c4f32c5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c690986e110b8e9c7d7f53765e9d8c8') in 0.019287 seconds
+  Import took 0.022406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Materials/Materials/Black_snaps002.mat
+  artifactKey: Guid(8440f7c46cde87942a79d9125f40ae89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Black_snaps002.mat using Guid(8440f7c46cde87942a79d9125f40ae89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2441b3b6f0d18fedece437ca1ec5f418') in 0.020254 seconds
+  Import took 0.023210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.038000 seconds.
+  path: Assets/Materials/Materials/BrownLight_snaps002.mat
+  artifactKey: Guid(9dd3f5b3049028f4e948921f3bf87f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/BrownLight_snaps002.mat using Guid(9dd3f5b3049028f4e948921f3bf87f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20edf615f50f4c7ca78de113661ea93') in 0.017925 seconds
+  Import took 0.020882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.097765 seconds.
+  path: Assets/Materials/Materials/DarkBlue_snaps002.mat
+  artifactKey: Guid(c2cf96f9bc9ef0143bfb62bd0e47e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/DarkBlue_snaps002.mat using Guid(c2cf96f9bc9ef0143bfb62bd0e47e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a4ff3606127df26e1eda5686631cbe') in 0.017756 seconds
+  Import took 0.020796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.143479 seconds.
+  path: Assets/Materials/Materials/DarkCyan_snaps002.mat
+  artifactKey: Guid(9b6f00edc7822ab47b645603f7b615b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/DarkCyan_snaps002.mat using Guid(9b6f00edc7822ab47b645603f7b615b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abfc5b2e8b7d1d66f1e2d0c8d60d196c') in 0.021379 seconds
+  Import took 0.024264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.985349 seconds.
+  path: Assets/Materials/Materials/DarkerGray_snaps002.mat
+  artifactKey: Guid(3d2110dabe6f73043ba4404830e26f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/DarkerGray_snaps002.mat using Guid(3d2110dabe6f73043ba4404830e26f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f0048784514dbf88a0a735f5ae615d') in 0.024162 seconds
+  Import took 0.028282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.031068 seconds.
+  path: Assets/Materials/Materials/DarkGray_snaps002.mat
+  artifactKey: Guid(15cb6b096bb78c7479c93c6e26153387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/DarkGray_snaps002.mat using Guid(15cb6b096bb78c7479c93c6e26153387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76794af0ed1db164dfb7089e7c45b39e') in 0.017455 seconds
+  Import took 0.020799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.172713 seconds.
+  path: Assets/Materials/Materials/DeepBlue_snaps002.mat
+  artifactKey: Guid(0311cbb0184a51845912c30ec478cb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/DeepBlue_snaps002.mat using Guid(0311cbb0184a51845912c30ec478cb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71b711b9a5e8e8efd467345989004cb') in 0.017101 seconds
+  Import took 0.020161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.161674 seconds.
+  path: Assets/Materials/Materials/Gold_snaps002.mat
+  artifactKey: Guid(f6acf520cc3bc374dbffd256f175bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Gold_snaps002.mat using Guid(f6acf520cc3bc374dbffd256f175bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439a290a75e0f9073b48fea4deb4cf3f') in 0.019105 seconds
+  Import took 0.022646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.090090 seconds.
+  path: Assets/Materials/Materials/Gray_snaps002.mat
+  artifactKey: Guid(8621dfcb3dbf229428e45425021e0875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Gray_snaps002.mat using Guid(8621dfcb3dbf229428e45425021e0875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019af183734783b7d35a6b56bde060b8') in 0.017989 seconds
+  Import took 0.021217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.101384 seconds.
+  path: Assets/Materials/Materials/Green_snaps002.mat
+  artifactKey: Guid(cff86b3f8014a6e4babecc006d77e004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Green_snaps002.mat using Guid(cff86b3f8014a6e4babecc006d77e004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '228713695b7b0391fbe76a1983933a43') in 0.017986 seconds
+  Import took 0.021003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.324325 seconds.
+  path: Assets/Materials/Materials/GreenBlack_snaps002.mat
+  artifactKey: Guid(38f55b85103d762478d8298d58d90704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/GreenBlack_snaps002.mat using Guid(38f55b85103d762478d8298d58d90704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bbdf27db9588149a6d717375068b714') in 0.020955 seconds
+  Import took 0.023869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014978 seconds.
+  path: Assets/Materials/Materials/GreenDark_snaps002.mat
+  artifactKey: Guid(6f5b522968a198d40a19799562c3eae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/GreenDark_snaps002.mat using Guid(6f5b522968a198d40a19799562c3eae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640e77f17abed4a3dd0a7c6ab476affe') in 0.021164 seconds
+  Import took 0.024779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015567 seconds.
+  path: Assets/Materials/Materials/Khaki Damp.mat
+  artifactKey: Guid(4afc0ffccab963644a4b0b22117f129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Khaki Damp.mat using Guid(4afc0ffccab963644a4b0b22117f129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b827305b0ecceb61af33d2fb92eb1e') in 0.019476 seconds
+  Import took 0.022426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.156592 seconds.
+  path: Assets/Materials/Materials/Khaki Dark.mat
+  artifactKey: Guid(651d0db5a5db31a4e8ea67cb0bb4bdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Khaki Dark.mat using Guid(651d0db5a5db31a4e8ea67cb0bb4bdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df71e343e29c56e42d7dda89345bcaff') in 0.019592 seconds
+  Import took 0.023518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Materials/Materials/Khaki Darker.mat
+  artifactKey: Guid(ca63e1d0575d9eb4ab8e24dac32b51d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Khaki Darker.mat using Guid(ca63e1d0575d9eb4ab8e24dac32b51d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd13851f96d66cafbeb65ee39dd289f81') in 0.025005 seconds
+  Import took 0.028358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.149012 seconds.
+  path: Assets/Materials/Materials/Khaki_snaps002.mat
+  artifactKey: Guid(4f6a32ae4320c1d489759d620e71be9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Khaki_snaps002.mat using Guid(4f6a32ae4320c1d489759d620e71be9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5816280d7ade91bd3deb86bd0be6ebc') in 0.018373 seconds
+  Import took 0.021412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016745 seconds.
+  path: Assets/Materials/Materials/LightBlue_snaps002.mat
+  artifactKey: Guid(4b600b0043b600a42a640a24ab4dea01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/LightBlue_snaps002.mat using Guid(4b600b0043b600a42a640a24ab4dea01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5be0e2f61493eb22e1620ce72cfd2fcf') in 0.030352 seconds
+  Import took 0.034812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021904 seconds.
+  path: Assets/Materials/Materials/LightGray_snaps002.mat
+  artifactKey: Guid(ae2efeea9c901af48b6bb19d9981d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/LightGray_snaps002.mat using Guid(ae2efeea9c901af48b6bb19d9981d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd488452a6a6e77ff0731da70255c81b5') in 0.021614 seconds
+  Import took 0.025620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Materials/Materials/Machine Blue Dark_snaps002.mat
+  artifactKey: Guid(779370d176aafca40a59fafa5ba422d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Machine Blue Dark_snaps002.mat using Guid(779370d176aafca40a59fafa5ba422d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52cec2477f4352f76137707e641ffd9') in 0.022322 seconds
+  Import took 0.025191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.100161 seconds.
+  path: Assets/Materials/Materials/Machine Blue Light_snaps002.mat
+  artifactKey: Guid(c91ea5393f73a814888ae7c250232e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Machine Blue Light_snaps002.mat using Guid(c91ea5393f73a814888ae7c250232e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0ebc0ea5def6642611f75263cbec75') in 0.018970 seconds
+  Import took 0.021999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Materials/Materials/Machine Blue_snaps002.mat
+  artifactKey: Guid(abbba6a8ef5ae9f4b864662d522758b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Machine Blue_snaps002.mat using Guid(abbba6a8ef5ae9f4b864662d522758b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5072b49ae2ff48fb7640a4b1a5845d85') in 0.017592 seconds
+  Import took 0.020602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002688 seconds.
+  path: Assets/Materials/Materials/Machine Green Dark_snaps002.mat
+  artifactKey: Guid(51e077d1f836fd5459499a9de2bf4c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Machine Green Dark_snaps002.mat using Guid(51e077d1f836fd5459499a9de2bf4c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a1791b5536d8014c36de7310cf7bad') in 0.018441 seconds
+  Import took 0.022180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020560 seconds.
+  path: Assets/Materials/Materials/Machine Green Light_snaps002.mat
+  artifactKey: Guid(3f95858cfa41c214495626e4e810179e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Machine Green Light_snaps002.mat using Guid(3f95858cfa41c214495626e4e810179e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2a7781091491cce1bc0789ad96503d') in 0.019393 seconds
+  Import took 0.022338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.143534 seconds.
+  path: Assets/Materials/Materials/Machine Green_snaps002.mat
+  artifactKey: Guid(86c38cc17be868947801ac9b80453963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Machine Green_snaps002.mat using Guid(86c38cc17be868947801ac9b80453963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46bb53634c11589b76172539259de955') in 0.028354 seconds
+  Import took 0.094368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Materials/Materials/Machine Orange Dark_snaps002.mat
+  artifactKey: Guid(79bf7ae28ff43cc4ca939f5652f4d38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Machine Orange Dark_snaps002.mat using Guid(79bf7ae28ff43cc4ca939f5652f4d38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce254e92d2b527ded6824a508d574be') in 0.017256 seconds
+  Import took 0.020010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Materials/Materials/Machine Orange Light_snaps002.mat
+  artifactKey: Guid(dfe499413b9e65e409dcfaa1013609fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Machine Orange Light_snaps002.mat using Guid(dfe499413b9e65e409dcfaa1013609fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50657deade31fe50dab8272075dbca95') in 0.017880 seconds
+  Import took 0.020799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Materials/Materials/MachineOrange_snaps002.mat
+  artifactKey: Guid(80507923a3333a6498095c8c364d7983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/MachineOrange_snaps002.mat using Guid(80507923a3333a6498095c8c364d7983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48090436960f312388b87e068172a997') in 0.017694 seconds
+  Import took 0.020507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067483 seconds.
+  path: Assets/Materials/Materials/Orange_snaps002.mat
+  artifactKey: Guid(1d2cbf17d90a3884f8f0c10cd230f809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Orange_snaps002.mat using Guid(1d2cbf17d90a3884f8f0c10cd230f809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af0688f66fe6705786f2d195f8b00a4') in 0.020532 seconds
+  Import took 0.023534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Materials/Materials/Red_snaps002.mat
+  artifactKey: Guid(015a5e2de7cf2514eb887cb8b34877d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Red_snaps002.mat using Guid(015a5e2de7cf2514eb887cb8b34877d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0355baf89d353877bb67886d56aeeb3') in 0.017459 seconds
+  Import took 0.020367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Materials/Materials/White_snaps002.mat
+  artifactKey: Guid(4a11ac89ec3635a4b896556552983d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/White_snaps002.mat using Guid(4a11ac89ec3635a4b896556552983d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188be1f9b893bbc57472e8f45339caa5') in 0.017244 seconds
+  Import took 0.019915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024815 seconds.
+  path: Assets/Materials/Materials/Yellow_snaps002.mat
+  artifactKey: Guid(2e89229997eb0fd4fb0ceb1c61a61593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Yellow_snaps002.mat using Guid(2e89229997eb0fd4fb0ceb1c61a61593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfc8b4bc88f49b9c37c6523fb422747') in 0.020335 seconds
+  Import took 0.023235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.288208 seconds.
+  path: Assets/Materials/Materials
+  artifactKey: Guid(15da29fe25042944d9ae6afdee0aea96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials using Guid(15da29fe25042944d9ae6afdee0aea96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563e7bcf5050e179777419297203018b') in 0.007153 seconds
+  Import took 0.010168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004002 seconds.
+  path: Assets/Materials/Materials
+  artifactKey: Guid(15da29fe25042944d9ae6afdee0aea96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials using Guid(15da29fe25042944d9ae6afdee0aea96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563e7bcf5050e179777419297203018b') in 0.002319 seconds
+  Import took 0.005118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.700897 seconds.
+  path: Assets/Lowpoly Ninja/Demo/Scene
+  artifactKey: Guid(1b2f424b06a7172489f1e5885845f3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Demo/Scene using Guid(1b2f424b06a7172489f1e5885845f3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130b1647f0bee7d1c146eb303daeb680') in 0.006640 seconds
+  Import took 0.009625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005139 seconds.
+  path: Assets/Lowpoly Ninja/Demo/Scene
+  artifactKey: Guid(1b2f424b06a7172489f1e5885845f3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Demo/Scene using Guid(1b2f424b06a7172489f1e5885845f3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130b1647f0bee7d1c146eb303daeb680') in 0.002236 seconds
+  Import took 0.005128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.086715 seconds.
+  path: Assets/Lowpoly Ninja/Materials/LpNinja_Mat01.mat
+  artifactKey: Guid(360dec1f7743f6747a8fcee714293e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Materials/LpNinja_Mat01.mat using Guid(360dec1f7743f6747a8fcee714293e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be14a40457e815062766b7d8981d91f') in 0.018704 seconds
+  Import took 0.021642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Lowpoly Ninja/Materials/Ninja_v1.1Mat.mat
+  artifactKey: Guid(65037b70f5fc5fc4bbd305218e020ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Materials/Ninja_v1.1Mat.mat using Guid(65037b70f5fc5fc4bbd305218e020ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03f1730e57f20432aa9592f83b069ae4') in 0.017057 seconds
+  Import took 0.019746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Lowpoly Ninja/Materials/LpNinja_Mat02.mat
+  artifactKey: Guid(4b59162b108f96946aa43288ea617c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Materials/LpNinja_Mat02.mat using Guid(4b59162b108f96946aa43288ea617c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf388bfa283d3bca1976c93f4d1d52c') in 0.019820 seconds
+  Import took 0.022818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.564377 seconds.
+  path: Assets/Lowpoly Ninja/Models/LowpolyNinja.fbx
+  artifactKey: Guid(728f6ad2b27850b428c6447c047db511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Models/LowpolyNinja.fbx using Guid(728f6ad2b27850b428c6447c047db511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aab490bbf1031061901eb15e8ccca52') in 0.076539 seconds
+  Import took 0.079748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Lowpoly Ninja/Models/LowpolyNinjav1.1.fbx
+  artifactKey: Guid(bdb20905bd9f8954c91cafa0716bd248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Models/LowpolyNinjav1.1.fbx using Guid(bdb20905bd9f8954c91cafa0716bd248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c2c7856e632b8583552d45573a3d95') in 0.037380 seconds
+  Import took 0.040407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.350157 seconds.
+  path: Assets/Lowpoly Ninja/Prefabs/LowpolyNinja.prefab
+  artifactKey: Guid(fc304f0df643d724da851b985a86a795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Prefabs/LowpolyNinja.prefab using Guid(fc304f0df643d724da851b985a86a795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb078228e9aa8732368c098a37ee8e49') in 0.019299 seconds
+  Import took 0.023193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Lowpoly Ninja/Prefabs/LowpolyNinja_v1.1.prefab
+  artifactKey: Guid(25dca67001422c04d8a535a7cd2006c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Prefabs/LowpolyNinja_v1.1.prefab using Guid(25dca67001422c04d8a535a7cd2006c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb36da2e1590681aa4ca963334bf5a33') in 0.025274 seconds
+  Import took 0.029121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.830768 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_Diffuse.png
+  artifactKey: Guid(49bc1dae59bb6654d8902b153aa0fe54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_Diffuse.png using Guid(49bc1dae59bb6654d8902b153aa0fe54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbe25f3d9b3d4b5671c582a75658d22') in 0.019037 seconds
+  Import took 0.021959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse6.png
+  artifactKey: Guid(b4a04f452dd5ce64f8f605b8e4a3a50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse6.png using Guid(b4a04f452dd5ce64f8f605b8e4a3a50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a7aa2843bb8868fc7fbf108e0de5604') in 0.017360 seconds
+  Import took 0.021021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse11.png
+  artifactKey: Guid(8aed072728f860e47b47a11173e3afbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse11.png using Guid(8aed072728f860e47b47a11173e3afbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004ec0f3c43db174fd53d46468cd4d9e') in 0.022973 seconds
+  Import took 0.026749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse4.png
+  artifactKey: Guid(af7ceeb0a25e5ab418575511e0cb695b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse4.png using Guid(af7ceeb0a25e5ab418575511e0cb695b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b570ad29c8bbae4688dbad85978a3675') in 0.021539 seconds
+  Import took 0.024717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse2.png
+  artifactKey: Guid(e6f08e6f7655f114cba2abd54338e2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse2.png using Guid(e6f08e6f7655f114cba2abd54338e2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a194c5cea4e82f0ee8b7cb1f948abae9') in 0.017781 seconds
+  Import took 0.021364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse5.png
+  artifactKey: Guid(dcd7b86f8ddbc6f40ab0dd4511d348b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse5.png using Guid(dcd7b86f8ddbc6f40ab0dd4511d348b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89629d1f8f2ca965ff3c63a9e828f09') in 0.018024 seconds
+  Import took 0.021093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse9.png
+  artifactKey: Guid(d8c979be325b3ec4384a0dde511d60a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse9.png using Guid(d8c979be325b3ec4384a0dde511d60a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c51f0b34d257e08333006d4b7b3c6e') in 0.016764 seconds
+  Import took 0.020255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse12.png
+  artifactKey: Guid(c11556d5637af03499ad6ff5bc8b82e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse12.png using Guid(c11556d5637af03499ad6ff5bc8b82e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82095079edb221719556b53876e73301') in 0.014782 seconds
+  Import took 0.017866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse10.png
+  artifactKey: Guid(c4c36ffe3e6a73d42a41c84ad5eb8f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse10.png using Guid(c4c36ffe3e6a73d42a41c84ad5eb8f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198727e9ac7b33a8c5ce40e8110f2840') in 0.016405 seconds
+  Import took 0.019358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Lowpoly Ninja/Textures/Ninja_diffuse3.png
+  artifactKey: Guid(a641d13a54f6da144b79eb2367a80eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Ninja/Textures/Ninja_diffuse3.png using Guid(a641d13a54f6da144b79eb2367a80eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55959d0bf8563ed4d88d9fcd52e8b86e') in 0.017225 seconds
+  Import took 0.020122 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
