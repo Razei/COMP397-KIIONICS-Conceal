@@ -1583,6 +1583,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 699876807, guid: e2eaf344009972c479041f55a88bb1fc, type: 3}
+      propertyPath: mouseSensitivity
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1314273176312169457, guid: e2eaf344009972c479041f55a88bb1fc, type: 3}
       propertyPath: m_RootOrder
       value: 0
