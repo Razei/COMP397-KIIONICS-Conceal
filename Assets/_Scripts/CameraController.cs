@@ -7,16 +7,23 @@ public class CameraController : MonoBehaviour
     public float mouseSensitivity = 1000.0f;
     public Transform playerBody;
     private float XRotation = 0.0f;
+    private PauseMenu pauseMenu;
 
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState= CursorLockMode.Locked;
+        pauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (pauseMenu.Paused)
+        {
+            return;
+        }
+
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 

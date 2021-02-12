@@ -13,16 +13,24 @@ public class PlayerBehaviour : MonoBehaviour
     public LayerMask groundMask;
     public Vector3 velocity;
     public bool isGrounded;
+    private PauseMenu pauseMenu;
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        pauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (pauseMenu.Paused)
+        {
+            return;
+        }
+
+
         isGrounded = true;
 
         //isGrounded = Physics.CheckSphere(groundCheck.position, groundRadius, groundMask);
