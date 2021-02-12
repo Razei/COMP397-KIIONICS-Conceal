@@ -30,10 +30,7 @@ public class PlayerBehaviour : MonoBehaviour
             return;
         }
 
-
-        isGrounded = true;
-
-        //isGrounded = Physics.CheckSphere(groundCheck.position, groundRadius, groundMask);
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundRadius, groundMask);
 
         if (isGrounded && velocity.y < 0)
         {
