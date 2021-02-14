@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -42,12 +43,6 @@ public class PauseMenu : MonoBehaviour
             }
             
         }
-
-        
-       
-          
-            
-        
     }
 
     public void Resume()
@@ -69,19 +64,15 @@ public class PauseMenu : MonoBehaviour
 
         SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
         if(inventoryPanel.activeSelf == true){
-             inventoryPanel.SetActive(false);
-       
-            
+             inventoryPanel.SetActive(false);  
         }
         else{
-             inventoryPanel.SetActive(true);
-            
-              
-               
+            inventoryPanel.SetActive(true);
         }
-       
     }
 
-
-  
+    public void Exit()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

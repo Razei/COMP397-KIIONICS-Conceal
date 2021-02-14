@@ -8,7 +8,7 @@ public class AnimContr2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
         anim.Play("WakeUp");
     }
 
