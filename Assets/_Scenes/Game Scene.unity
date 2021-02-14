@@ -1635,6 +1635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LowpolyNinja_v1.1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2622895594422645218, guid: e2eaf344009972c479041f55a88bb1fc, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2eaf344009972c479041f55a88bb1fc, type: 3}
 --- !u!1 &526234135
