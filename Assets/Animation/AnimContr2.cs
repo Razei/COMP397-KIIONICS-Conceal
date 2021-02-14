@@ -9,7 +9,8 @@ public class AnimContr2 : MonoBehaviour
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
-        anim.Play("WakeUp");
+
+        anim.Play("Entry");
     }
 
     // Update is called once per frame

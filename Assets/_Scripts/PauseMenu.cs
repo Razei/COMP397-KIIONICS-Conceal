@@ -27,19 +27,16 @@ public class PauseMenu : MonoBehaviour
         {
             if (Paused)
             {
-                SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
-                inventoryPanel.SetActive(false);
-                pauseMenu.SetActive(false);
-                Time.timeScale = 1.0f;
-                Cursor.lockState = CursorLockMode.Locked;
-                Paused = false;
-            } else
+                Resume();
+            } 
+            else
             {
                 SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0.0f;
                 Cursor.lockState = CursorLockMode.None;
                 Paused = true;
+                AudioListener.pause = true;
             }
             
         }
@@ -47,6 +44,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        AudioListener.pause = false;
         SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
         pauseMenu.SetActive(false);
         Time.timeScale = 1.0f;

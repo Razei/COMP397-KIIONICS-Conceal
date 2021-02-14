@@ -45902,6 +45902,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b73383ab2459f2643abe557b2d08dcd5, type: 2}
+    - target: {fileID: -6057140222963153312, guid: 5090c1d92c3e3034a85460b495fcf820, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -5606949809111172367, guid: 5090c1d92c3e3034a85460b495fcf820, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -46062,7 +46066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a634c228276742835e5121fbf2a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 1546798585}
 --- !u!195 &1546798582
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46195,6 +46199,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1546798585 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 5090c1d92c3e3034a85460b495fcf820, type: 3}
+  m_PrefabInstance: {fileID: 1546798578}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1547890643
 PrefabInstance:
   m_ObjectHideFlags: 0
