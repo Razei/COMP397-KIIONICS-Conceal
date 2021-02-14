@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject inventoryPanel;
+    public Button inventoryButton;
     public bool Paused;
 
     // Start is called before the first frame update
     void Start()
     {
         Paused = false;
+        inventoryButton.onClick.AddListener(ShowInventory);
+        inventoryPanel.SetActive(false);
+        pauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,6 +27,7 @@ public class PauseMenu : MonoBehaviour
             if (Paused)
             {
                 SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
+                inventoryPanel.SetActive(false);
                 pauseMenu.SetActive(false);
                 Time.timeScale = 1.0f;
                 Cursor.lockState = CursorLockMode.Locked;
@@ -35,6 +42,12 @@ public class PauseMenu : MonoBehaviour
             }
             
         }
+
+        
+       
+          
+            
+        
     }
 
     public void Resume()
@@ -51,4 +64,24 @@ public class PauseMenu : MonoBehaviour
         SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
 
     }
+
+    public void ShowInventory(){
+
+        SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
+        if(inventoryPanel.activeSelf == true){
+             inventoryPanel.SetActive(false);
+       
+            
+        }
+        else{
+             inventoryPanel.SetActive(true);
+            
+              
+               
+        }
+       
+    }
+
+
+  
 }
