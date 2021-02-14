@@ -20,12 +20,14 @@ public class PauseMenu : MonoBehaviour
         {
             if (Paused)
             {
+                SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
                 pauseMenu.SetActive(false);
                 Time.timeScale = 1.0f;
                 Cursor.lockState = CursorLockMode.Locked;
                 Paused = false;
             } else
             {
+                SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0.0f;
                 Cursor.lockState = CursorLockMode.None;
@@ -37,9 +39,16 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
         pauseMenu.SetActive(false);
         Time.timeScale = 1.0f;
         Cursor.lockState = CursorLockMode.Locked;
         Paused = false;
+    }
+
+    public void Save()
+    {
+        SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
+
     }
 }
