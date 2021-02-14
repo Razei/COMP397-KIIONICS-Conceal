@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     {
         mainMenu = GameObject.Find("MainMenuContainer");
         options = GameObject.Find("OptionsContainer");
-        options.SetActive(false);
+        options?.SetActive(false);
     }
 
     // Update is called once per frame
