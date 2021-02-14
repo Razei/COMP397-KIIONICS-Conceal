@@ -18,6 +18,7 @@ public class PauseMenu : MonoBehaviour
         inventoryButton.onClick.AddListener(ShowInventory);
         inventoryPanel.SetActive(false);
         pauseMenu.SetActive(false);
+        Resume();
     }
 
     // Update is called once per frame
@@ -71,6 +72,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("MainMenu");
+        Cursor.lockState = CursorLockMode.None;
+        Application.LoadLevel("MainMenu");
+        Application.UnloadLevel("GameScene");
     }
 }
