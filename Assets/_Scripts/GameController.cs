@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+     
     GameObject mainMenu;
     GameObject options;
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class GameController : MonoBehaviour
 
     public void NewGame()
     {
+        
         SceneManager.LoadScene("GameScene");
     }
 
