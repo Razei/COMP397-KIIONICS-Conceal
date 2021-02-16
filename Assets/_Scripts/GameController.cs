@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+     
     GameObject mainMenu;
     GameObject options;
     GameObject loadGame;
@@ -29,6 +30,7 @@ public class GameController : MonoBehaviour
 
     public void NewGame()
     {
+        
         SceneManager.LoadScene("GameScene");
     }
 
