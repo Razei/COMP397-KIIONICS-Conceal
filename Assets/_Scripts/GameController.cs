@@ -8,12 +8,17 @@ public class GameController : MonoBehaviour
 {
     GameObject mainMenu;
     GameObject options;
+    GameObject loadGame;
+    private GameObject activeObject;
     // Start is called before the first frame update
     void Start()
     {
         mainMenu = GameObject.Find("MainMenuContainer");
         options = GameObject.Find("OptionsContainer");
+        loadGame = GameObject.Find("LoadGameContainer");
+
         options?.SetActive(false);
+        loadGame?.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,22 +34,32 @@ public class GameController : MonoBehaviour
 
     public void LoadGame()
     {
-
+        if (loadGame)
+        {
+            activeObject = loadGame;
+            switchFromMainPanel();
+        }
     }
 
-    public void Options()
+    public void showOptions()
+    {
+        activeObject = options;
+        switchFromMainPanel();
+    }
+
+    private void switchFromMainPanel()
     {
         mainMenu.SetActive(false);
-        options.SetActive(true);
+        activeObject.SetActive(true);
     }
 
-    public void OptionsBack()
+    public void switchToMainPanel()
     {
         mainMenu.SetActive(true);
-        options.SetActive(false);
+        activeObject.SetActive(false);
     }
 
-    public void returnToMain(){
+    public void returnToMainScene(){
          SceneManager.LoadScene("MainMenu");
     }
 
