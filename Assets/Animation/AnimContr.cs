@@ -15,7 +15,7 @@ public class AnimContr : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("s"))
+   /*     if (Input.GetKeyDown("s"))
         {
             anim.Play("ShutDown");
         }
@@ -28,7 +28,7 @@ public class AnimContr : MonoBehaviour
         if (Input.GetKeyDown("d"))
         {
             anim.Play("Destroyed");
-        }
+        }*/
 
     }
 }
