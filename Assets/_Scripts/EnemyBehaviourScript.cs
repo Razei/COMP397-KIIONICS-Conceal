@@ -19,6 +19,7 @@ public class EnemyBehaviourScript : MonoBehaviour
     [Header("Navigation")]
     public NavMeshAgent navMeshAgent;
     public GameObject player;
+    public float patrolDistance;
     private Animator animator;
 
     [Header("Attack")]
@@ -40,23 +41,17 @@ public class EnemyBehaviourScript : MonoBehaviour
         playerBehaviour = FindObjectOfType<PlayerBehaviour>();
         startPosition = transform.position;
         forward = transform.forward;
-        StartCoroutine(pacing());
+        StartCoroutine(patrol()); // immediately start patrolling
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(navMeshAgent.remainingDistance);
         if (HasLOS)
         {
             navMeshAgent.SetDestination(player.transform.position);
             playerDistance = Vector3.Distance(transform.position, player.transform.position);
         } 
-        else
-        {
-
-        }
-        /*navMeshAgent.SetDestination(player.position);*/
     }
 
     private void OnTriggerEnter(Collider other)
@@ -66,8 +61,10 @@ public class EnemyBehaviourScript : MonoBehaviour
             HasLOS = true;
             player = other.transform.gameObject;
             droneSound.Play();
-            StopCoroutine(pacing());
-            Debug.Log(player);
+
+            // stop routines and follow player
+            StopCoroutine(patrol());
+            StopCoroutine(lostSight());
         }
     }
 
@@ -75,52 +72,62 @@ public class EnemyBehaviourScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(waiter());
+            // start routine for losing sight of player
+            StartCoroutine(lostSight());
         }
     }
 
-    IEnumerator waiter()
+    IEnumerator lostSight()
     {
-        /*animator.SetInteger("AnimState", (int)DroneStates.LOOK);
+        yield return new WaitForSeconds(1);
 
-        float counter = 0;
-        float waitTime = animator.GetCurrentAnimatorStateInfo(0).length;
-        Debug.Log(animator.GetCurrentAnimatorStateInfo(0).length);
+        // go to player's last known location
+        navMeshAgent.SetDestination(player.transform.position);
+        yield return new WaitForSeconds(1);
 
-        //Now, Wait until the current state is done playing
-        while (counter < (waitTime))
+        HasLOS = false;
+
+        // wait until navmesh reaches destination
+        while (navMeshAgent.remainingDistance != 0)
         {
-            counter += Time.deltaTime;
-            Debug.Log(counter);
             yield return null;
         }
 
-        //Done playing. Do something below!
-        Debug.Log("Done Playing");*/
-
+        // look around for player then wait for 4 seconds instead of immediately leaving the area 
+        /*animator.SetInteger("AnimState", (int)DroneStates.LOOK);
+        yield return new WaitForSeconds(4);*/
         yield return new WaitForSeconds(4);
 
-        /*animator.SetInteger("AnimState", (int)DroneStates.IDLE);*/
+        // return to start position
         navMeshAgent.SetDestination(startPosition);
         droneSound.Stop();
-        HasLOS = false;
-        StopCoroutine(waiter());
-        StartCoroutine(pacing());
+
+
+        // start patrolling again
+        StopCoroutine(lostSight());
+        StartCoroutine(patrol());
     }
 
-    IEnumerator pacing()
+    IEnumerator patrol()
     {
+        // while the player hasn't been sighted
         while (!HasLOS)
         {
+            // move forward 30 units
+            navMeshAgent.SetDestination(startPosition + (forward * patrolDistance));
+            yield return null;
+
             // wait until navmesh reaches destination
             while (navMeshAgent.remainingDistance != 0)
             {
                 yield return null;
             }
 
-            navMeshAgent.SetDestination(startPosition + (forward * 30));
             yield return new WaitForSeconds(5);
 
+            // move back to start position
+            navMeshAgent.SetDestination(startPosition);
+            yield return null;
 
             // wait until navmesh reaches destination
             while (navMeshAgent.remainingDistance != 0)
@@ -128,7 +135,6 @@ public class EnemyBehaviourScript : MonoBehaviour
                 yield return null;
             }
 
-            navMeshAgent.SetDestination(startPosition);
             yield return new WaitForSeconds(5);
         }
     }

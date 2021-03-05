@@ -561,7 +561,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.89019614, b: 0.41176474, a: 1}
-  m_Intensity: 12.5
+  m_Intensity: 3.11
   m_Range: 5.3
   m_SpotAngle: 146.5
   m_InnerSpotAngle: 21.80208
@@ -994,8 +994,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.0188694, y: 3.5901818, z: 8.530652}
-  m_Center: {x: 0, y: 1.6300001, z: 3.765327}
+  m_Size: {x: 8.678533, y: 3.5901818, z: 15.974789}
+  m_Center: {x: 0, y: 1.6300001, z: 8.148657}
 --- !u!195 &3397487990766776870
 NavMeshAgent:
   m_ObjectHideFlags: 0
