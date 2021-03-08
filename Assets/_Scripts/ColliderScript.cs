@@ -16,7 +16,7 @@ public class ColliderScript : MonoBehaviour
         //SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
 
         //IF THERE IS A COLLISION 
-        if (other.gameObject.tag == "Enemy")
+/*        if (other.gameObject.tag == "Enemy")
         {
             SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
             Debug.Log("Triggered by Enemy");
@@ -24,7 +24,7 @@ public class ColliderScript : MonoBehaviour
             // game over screen should load here.
             SceneManager.LoadScene("GameOver");
             Cursor.lockState = CursorLockMode.None;
-        }
+        }*/
 
         //Game note: if health isn't zero, reduce health 
 

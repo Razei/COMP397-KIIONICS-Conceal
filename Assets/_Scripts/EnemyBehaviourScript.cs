@@ -27,6 +27,7 @@ public class EnemyBehaviourScript : MonoBehaviour
     [Header("Attack")]
     public float attackDistance;
     public PlayerBehaviour playerBehaviour;
+    public HealthBarScreenSpaceController healthBar;
     public float damageDelay = 1.0f;
     public bool isAttacking = false;
     public float kickForce = 0.01f;
@@ -37,7 +38,7 @@ public class EnemyBehaviourScript : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         playerBehaviour = FindObjectOfType<PlayerBehaviour>();
-
+        healthBar = FindObjectOfType<HealthBarScreenSpaceController>();
         // Disabling auto-braking allows for continuous movement
         // between points (ie, the agent doesn't slow down as it
         // approaches a destination point).
@@ -64,7 +65,10 @@ public class EnemyBehaviourScript : MonoBehaviour
         {
             navMeshAgent.SetDestination(player.transform.position);
             playerDistance = Vector3.Distance(transform.position, player.transform.position);
-        } 
+
+            if (!isAttacking)
+                StartCoroutine(InflictDamage());
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -175,6 +179,16 @@ public class EnemyBehaviourScript : MonoBehaviour
 
             yield return new WaitForSeconds(5);*/
         }
+    }
+
+    IEnumerator InflictDamage()
+    {
+        isAttacking = true;
+        yield return new WaitForSeconds(damageDelay);
+
+        healthBar.TakeDamage(10);
+        isAttacking = false;
+        StopCoroutine(InflictDamage());
     }
 
     private float calculatePathDistance(NavMeshPath path)
