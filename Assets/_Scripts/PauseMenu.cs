@@ -4,25 +4,32 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject inventoryPanel;
+    public Button saveButton;
     public Button inventoryButton;
     public bool Paused;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
         Paused = false;
-        inventoryButton.onClick.AddListener(ShowInventory);
+        saveButton.onClick.AddListener(Save);
+;       inventoryButton.onClick.AddListener(ShowInventory);
         inventoryPanel.SetActive(false);
         pauseMenu.SetActive(false);
+      
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (Paused)
@@ -55,6 +62,12 @@ public class PauseMenu : MonoBehaviour
     public void Save()
     {
         SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
+        
+        player = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log(player.transform.position);
+        PlayerPrefs.SetFloat("Player X", player.transform.position.x);
+        PlayerPrefs.SetFloat("Player Y", player.transform.position.y);
+        PlayerPrefs.SetFloat("Player Z", player.transform.position.z);
 
     }
 
@@ -77,4 +90,8 @@ public class PauseMenu : MonoBehaviour
         /*Application.LoadLevel("MainMenu");
         Application.UnloadLevel("GameScene");*/
     }
+
+   
 }
+
+
