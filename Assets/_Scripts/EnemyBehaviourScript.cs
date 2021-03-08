@@ -188,10 +188,14 @@ public class EnemyBehaviourScript : MonoBehaviour
         isAttacking = true;
         yield return new WaitForSeconds(damageDelay);
 
-        healthBar.TakeDamage(10);
-        playerBehaviour.hitSound.Play();
-        isAttacking = false;
-        StopCoroutine(InflictDamage());
+        // if the player is still in line of sight after damage delay
+        if (HasLOS)
+        {
+            healthBar.TakeDamage(10);
+            playerBehaviour.hitSound.Play();
+            isAttacking = false;
+            StopCoroutine(InflictDamage());
+        }
     }
 
     private float calculatePathDistance(NavMeshPath path)
