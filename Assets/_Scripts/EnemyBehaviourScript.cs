@@ -103,6 +103,7 @@ public class EnemyBehaviourScript : MonoBehaviour
         // go to player's last known location
         navMeshAgent.SetDestination(player.transform.position);
         HasLOS = false;
+        isAttacking = false;
         yield return new WaitForSeconds(1);
 
         droneSound.Stop();
