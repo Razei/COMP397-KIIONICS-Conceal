@@ -744,6 +744,7 @@ GameObject:
   - component: {fileID: 712686896195134153}
   - component: {fileID: 712686896195134166}
   - component: {fileID: 712686896195134167}
+  - component: {fileID: 5548775494600618420}
   - component: {fileID: 712686896195134164}
   m_Layer: 0
   m_Name: PatrolDrone
@@ -839,7 +840,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &712686896195134164
+--- !u!114 &5548775494600618420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -847,6 +848,30 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8845656681431317442}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0961364032a05f940bf76aa5bfced031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasLOS: 0
+  droneSound: {fileID: 0}
+  navMeshAgent: {fileID: 0}
+  player: {fileID: 0}
+  patrolDistance: 0
+  points: []
+  attackDistance: 0
+  playerBehaviour: {fileID: 0}
+  damageDelay: 1
+  isAttacking: 0
+  kickForce: 0.01
+  playerDistance: 0
+--- !u!114 &712686896195134164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8845656681431317442}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4127e6f9f36157542a778383dbcf7a36, type: 3}
   m_Name: 
