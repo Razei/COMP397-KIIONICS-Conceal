@@ -14,12 +14,14 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     private Animator animator;
-
     public CharacterController controller;
+    public AudioSource hitSound;
+
     [Header("Movement")]
     public float maxSpeed = 10.0f;
     public float gravity = -30.0f;
     public float jumpHeight = 3.0f;
+
     [Header("Ground Detection")]
     public Transform groundCheck;
     public float groundRadius = 0.5f;

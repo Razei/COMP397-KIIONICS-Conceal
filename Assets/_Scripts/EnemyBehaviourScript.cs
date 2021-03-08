@@ -15,6 +15,7 @@ public class EnemyBehaviourScript : MonoBehaviour
     [Header("Line of Sight")]
     public bool HasLOS = false;
     public AudioSource droneSound;
+    public AudioSource gunSound;
 
     [Header("Navigation")]
     public NavMeshAgent navMeshAgent;
@@ -78,6 +79,7 @@ public class EnemyBehaviourScript : MonoBehaviour
             HasLOS = true;
             player = other.transform.gameObject;
             droneSound.Play();
+            gunSound.Play();
 
             // stop routines and follow player
             StopCoroutine(patrol());
@@ -100,10 +102,11 @@ public class EnemyBehaviourScript : MonoBehaviour
 
         // go to player's last known location
         navMeshAgent.SetDestination(player.transform.position);
+        HasLOS = false;
         yield return new WaitForSeconds(1);
 
-        HasLOS = false;
-
+        droneSound.Stop();
+        gunSound.Stop();
 
         // wait until navmesh reaches destination
         while (navMeshAgent.remainingDistance != 0)
@@ -118,8 +121,7 @@ public class EnemyBehaviourScript : MonoBehaviour
 
         // return to start position
         /*navMeshAgent.SetDestination(startPosition);*/
-        droneSound.Stop();
-
+ 
 
         // start patrolling again
         StopCoroutine(lostSight());
@@ -187,6 +189,7 @@ public class EnemyBehaviourScript : MonoBehaviour
         yield return new WaitForSeconds(damageDelay);
 
         healthBar.TakeDamage(10);
+        playerBehaviour.hitSound.Play();
         isAttacking = false;
         StopCoroutine(InflictDamage());
     }
