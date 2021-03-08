@@ -22316,7 +22316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594230731}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.48000002, y: 0, z: 22.489998}
+  m_LocalPosition: {x: -7.6, y: 0, z: 43.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 971202235}
@@ -23281,7 +23281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616552360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.84, y: -0.045533657, z: 55.879997}
+  m_LocalPosition: {x: 16.42, y: 6.14, z: 94.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 971202235}
@@ -24268,7 +24268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645921898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: -0.045533657, z: 91.729996}
+  m_LocalPosition: {x: -12.73, y: 6.24, z: 61.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 971202235}
@@ -33110,7 +33110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879122434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.84, y: -0.045533657, z: 78.6}
+  m_LocalPosition: {x: 24.68, y: 5.87, z: 66.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 971202235}
@@ -61991,7 +61991,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638835765}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.48000002, y: 0, z: 38.049995}
+  m_LocalPosition: {x: -6.96, y: 0, z: 87.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 971202235}
@@ -67623,7 +67623,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798915803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 16.290081}
+  m_LocalPosition: {x: 1.625, y: 0.04, z: 16.474}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 971202235}
@@ -75338,8 +75338,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 11.17
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -78940,7 +78940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4707248068939529915, guid: a9dee942ad189d94eb94431ab0500255, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3082517295021435226, guid: a9dee942ad189d94eb94431ab0500255, type: 3}
       propertyPath: isGrounded
