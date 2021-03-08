@@ -54,6 +54,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Save()
     {
+      
+
         SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
 
     }
