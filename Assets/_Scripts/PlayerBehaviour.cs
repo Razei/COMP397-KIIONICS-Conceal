@@ -14,12 +14,14 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     private Animator animator;
-
     public CharacterController controller;
+    public AudioSource hitSound;
+
     [Header("Movement")]
     public float maxSpeed = 10.0f;
     public float gravity = -30.0f;
     public float jumpHeight = 3.0f;
+
     [Header("Ground Detection")]
     public Transform groundCheck;
     public float groundRadius = 0.5f;
@@ -86,5 +88,22 @@ public class PlayerBehaviour : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
+    }
+
+    public void SavePlayer()
+
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+        transform.position = position;
+
     }
 }
