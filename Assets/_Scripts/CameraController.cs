@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    [Header("Controls")]
+    public Joystick joystick;
+    public float horizontalSensitivity;
+    public float verticalSensitivity;
+
     public float mouseSensitivity = 1000.0f;
     public Transform playerBody;
     private float XRotation = 0.0f;
@@ -12,7 +17,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState= CursorLockMode.Locked;
+        /*Cursor.lockState= CursorLockMode.Locked;*/
         pauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
     }
 
@@ -24,8 +29,11 @@ public class CameraController : MonoBehaviour
             return;
         }
 
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+        /*float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;*/
+
+        float mouseX = joystick.Horizontal * horizontalSensitivity;
+        float mouseY = joystick.Vertical * verticalSensitivity;
 
         XRotation -= mouseY;
         XRotation = Mathf.Clamp(XRotation, -90.0f, 90.0f);
