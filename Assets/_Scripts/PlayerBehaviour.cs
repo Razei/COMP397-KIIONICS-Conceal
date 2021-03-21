@@ -30,6 +30,7 @@ public class PlayerBehaviour : MonoBehaviour
     public Vector3 velocity;
    
     private PauseMenu pauseMenu;
+    private Vector3 m_touchesEnded;
 
     // Start is called before the first frame update
     void Start()
@@ -56,10 +57,38 @@ public class PlayerBehaviour : MonoBehaviour
             velocity.y = -2.0f;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = 0.0f;
+        float z = 0.0f;
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        /*float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");*/
+
+        float direction = 0.0f;
+
+        foreach (var touch in Input.touches)
+        {
+            var worldTouch = Camera.main.ScreenToWorldPoint(touch.position);
+
+            x = worldTouch.x;
+            z = worldTouch.y;
+
+            m_touchesEnded = worldTouch;
+
+            if (worldTouch.x > transform.position.x)
+            {
+                // direction is positive
+                direction = 1.0f;
+
+            }
+
+            if (worldTouch.x < transform.position.x)
+            {
+                // direction is negative
+                direction = -1.0f;
+            }
+        }
+
+        Vector3 move = transform.right * x * direction;
 
         controller.Move(move * maxSpeed * Time.deltaTime);
 
