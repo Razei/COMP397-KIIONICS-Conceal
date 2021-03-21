@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject inventoryPanel;
     public Button saveButton;
+    public GameObject menuButton;
     public Button inventoryButton;
     public bool Paused;
    // public GameObject player;
@@ -45,23 +46,27 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (Paused)
-            {
-                Resume();
-            } 
-            else
-            {
-                SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
-                pauseMenu.SetActive(true);
-                Time.timeScale = 0.0f;
-                Cursor.lockState = CursorLockMode.None;
-                Paused = true;
-                AudioListener.pause = true;
-            }
-            
+            Pause();
+        }*/
+    }
+
+    public void Pause()
+    {
+        if (Paused)
+        {
+            Resume();
+        }
+        else
+        {
+            SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
+            pauseMenu.SetActive(true);
+            menuButton.SetActive(false);
+            Time.timeScale = 0.0f;
+            Cursor.lockState = CursorLockMode.None;
+            Paused = true;
+            AudioListener.pause = true;
         }
     }
 
@@ -70,6 +75,7 @@ public class PauseMenu : MonoBehaviour
         AudioListener.pause = false;
         SFXManager.sfxInstance.Audio.PlayOneShot(SFXManager.sfxInstance.Click);
         pauseMenu.SetActive(false);
+        menuButton.SetActive(true);
         Time.timeScale = 1.0f;
         Cursor.lockState = CursorLockMode.Locked;
         Paused = false;

@@ -17,6 +17,11 @@ public class PlayerBehaviour : MonoBehaviour
     public CharacterController controller;
     public AudioSource hitSound;
 
+    [Header("Controls")]
+    public Joystick joystick;
+    public float horizontalSensitivity;
+    public float verticalSensitivity;
+
     [Header("Movement")]
     public float maxSpeed = 10.0f;
     public float gravity = -30.0f;
@@ -30,7 +35,6 @@ public class PlayerBehaviour : MonoBehaviour
     public Vector3 velocity;
    
     private PauseMenu pauseMenu;
-    private Vector3 m_touchesEnded;
 
     // Start is called before the first frame update
     void Start()
@@ -57,38 +61,13 @@ public class PlayerBehaviour : MonoBehaviour
             velocity.y = -2.0f;
         }
 
-        float x = 0.0f;
-        float z = 0.0f;
-
         /*float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");*/
 
-        float direction = 0.0f;
+        float x = joystick.Horizontal * horizontalSensitivity;
+        float z = joystick.Vertical * verticalSensitivity;
 
-        foreach (var touch in Input.touches)
-        {
-            var worldTouch = Camera.main.ScreenToWorldPoint(touch.position);
-
-            x = worldTouch.x;
-            z = worldTouch.y;
-
-            m_touchesEnded = worldTouch;
-
-            if (worldTouch.x > transform.position.x)
-            {
-                // direction is positive
-                direction = 1.0f;
-
-            }
-
-            if (worldTouch.x < transform.position.x)
-            {
-                // direction is negative
-                direction = -1.0f;
-            }
-        }
-
-        Vector3 move = transform.right * x * direction;
+        Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * maxSpeed * Time.deltaTime);
 
@@ -101,16 +80,20 @@ public class PlayerBehaviour : MonoBehaviour
         }
         
 
-        if (Input.GetButton("Jump") && isGrounded)
+        /*if (Input.GetButton("Jump") && isGrounded)
         {
-            Debug.Log("jumping");
-            animator.SetInteger("AnimState", (int)PlayerState.JUMP);
-            velocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
-        }
+            Jump();
+        }*/
 
         velocity.y += gravity * Time.deltaTime;
-
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    void Jump()
+    {
+        Debug.Log("jumping");
+        animator.SetInteger("AnimState", (int)PlayerState.JUMP);
+        velocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
     }
 
     void OnDrawGizmos()
@@ -134,5 +117,13 @@ public class PlayerBehaviour : MonoBehaviour
         position.z = data.position[2];
         transform.position = position;
 
+    }
+
+    public void OnJumpButtonPressed()
+    {
+        if (isGrounded)
+        {
+            Jump();
+        }
     }
 }
