@@ -3732,9 +3732,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1874258016, guid: e2eaf344009972c479041f55a88bb1fc, type: 3}
-        m_TargetAssemblyTypeName: PlayerBehaviour, Assembly-CSharp
-        m_MethodName: SavePlayer
+      - m_Target: {fileID: 873167175}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: OnSaveButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32912,6 +32912,10 @@ MonoBehaviour:
   inventoryButton: {fileID: 1382606142}
   Paused: 0
   player: {fileID: 0}
+  playerCamera: {fileID: 0}
+  pausable: {fileID: 0}
+  sceneData: {fileID: 11400000, guid: 3ec2cf1f447170249b8f46161a4ec875, type: 2}
+  gameStateElement: {fileID: 0}
 --- !u!1001 &873406572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49241,9 +49245,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1874258016, guid: e2eaf344009972c479041f55a88bb1fc, type: 3}
-        m_TargetAssemblyTypeName: PlayerBehaviour, Assembly-CSharp
-        m_MethodName: LoadPlayer
+      - m_Target: {fileID: 873167175}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: OnLoadButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
