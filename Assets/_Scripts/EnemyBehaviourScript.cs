@@ -34,6 +34,8 @@ public class EnemyBehaviourScript : MonoBehaviour
     public float kickForce = 0.01f;
     public float playerDistance;
 
+    private Bullets bulletScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +46,7 @@ public class EnemyBehaviourScript : MonoBehaviour
         // between points (ie, the agent doesn't slow down as it
         // approaches a destination point).
         navMeshAgent.autoBraking = false;
+        bulletScript = GetComponent<Bullets>();
 
         // get all the child points
         if (parentPoint)
@@ -80,6 +83,7 @@ public class EnemyBehaviourScript : MonoBehaviour
             player = other.transform.gameObject;
             droneSound.Play();
             gunSound.Play();
+            bulletScript.shootBullet();
 
             // stop routines and follow player
             StopCoroutine(patrol());
