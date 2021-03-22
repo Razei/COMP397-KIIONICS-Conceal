@@ -83,7 +83,9 @@ public class EnemyBehaviourScript : MonoBehaviour
             player = other.transform.gameObject;
             droneSound.Play();
             gunSound.Play();
-            bulletScript.shootBullet();
+
+            StartCoroutine(shoot());
+            /*bulletScript.shootBullet();*/
 
             // stop routines and follow player
             StopCoroutine(patrol());
@@ -97,6 +99,15 @@ public class EnemyBehaviourScript : MonoBehaviour
         {
             // start routine for losing sight of player
             StartCoroutine(lostSight());
+        }
+    }
+
+    IEnumerator shoot()
+    {
+        while (HasLOS) { 
+            bulletScript.shootBullet();
+
+            yield return new WaitForSeconds(0.3f);
         }
     }
 
@@ -130,6 +141,7 @@ public class EnemyBehaviourScript : MonoBehaviour
 
         // start patrolling again
         StopCoroutine(lostSight());
+        StopCoroutine(shoot());
         StartCoroutine(patrol());
     }
 

@@ -41,7 +41,7 @@ class stun : Bullet
 
     public override double dmg => 5;
 
-    public override float speed => 5;
+    public override float speed => 15;
 
     public override double payload()
     {
@@ -95,7 +95,7 @@ public class Bullets : MonoBehaviour
             {
                 directionalitySpeed = -bulletType.speed;
             }
-            stun.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, directionalitySpeed) , ForceMode.Impulse);
+            stun.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, directionalitySpeed) , ForceMode.VelocityChange);
 
             Destroy(stun, 2f);
            
