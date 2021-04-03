@@ -17,6 +17,9 @@ public class PlayerBehaviour : MonoBehaviour
     public CharacterController controller;
     public AudioSource hitSound;
 
+    [Header("Inventory")]
+    public InventoryObject inventory;
+
     [Header("Controls")]
     public Joystick joystick;
     public float horizontalSensitivity;
@@ -125,5 +128,20 @@ public class PlayerBehaviour : MonoBehaviour
         {
             Jump();
         }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        var item = other.GetComponent<Item>();
+        if (item)
+        {
+            inventory.AddItem(item.item, 1);
+            Destroy(other.gameObject);
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        inventory.container.Clear();
     }
 }
