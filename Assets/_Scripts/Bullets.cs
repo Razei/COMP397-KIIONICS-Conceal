@@ -68,7 +68,16 @@ public class Bullets : MonoBehaviour
   
         if (isLethal == true)
         {
-            GameObject bullet = Instantiate(bulletPrefab);
+
+            GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject();
+            if (bullet != null)
+            {
+                bullet.transform.position = shootingDrone.transform.position;
+                bullet.transform.rotation = shootingDrone.transform.rotation;
+                bullet.SetActive(true);
+            }
+
+    
             Bullet bulletType = new slug();
 
             bullet.transform.position = spawnpoint.position;
@@ -76,6 +85,8 @@ public class Bullets : MonoBehaviour
             Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
             spawnpoint.parent.GetComponent<Collider>());
             bullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, bulletType.speed), ForceMode.Impulse);
+            
+
             Destroy(bullet, 2f);
         }
         else {
