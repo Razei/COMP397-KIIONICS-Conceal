@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 public class DisplayInventory : MonoBehaviour
 {
     public InventoryObject inventory;
+    public UIController uIController;
     public int X_START;
     public int Y_START;
     public int X_SPACE_BETWEEN_ITEM;
@@ -15,6 +18,7 @@ public class DisplayInventory : MonoBehaviour
     void Start()
     {
         CreateDisplay();
+        uIController = FindObjectOfType<UIController>();
     }
 
     void Update()
@@ -40,7 +44,15 @@ public class DisplayInventory : MonoBehaviour
         for (int i = 0; i < inventory.container.Count; i++)
         {
             if (itemsDisplayed.ContainsKey(inventory.container[i])){
-                itemsDisplayed[inventory.container[i]].GetComponentInChildren<TextMeshProUGUI>().text = inventory.container[i].amount.ToString("n0");
+                if (inventory.container[i].amount <= 0)
+                {
+                    Destroy(itemsDisplayed[inventory.container[i]]);
+                    itemsDisplayed.Remove(inventory.container[i]);
+                    inventory.container.RemoveAt(i);
+                } else
+                {
+                    itemsDisplayed[inventory.container[i]].GetComponentInChildren<TextMeshProUGUI>().text = inventory.container[i].amount.ToString("n0");
+                }
             } 
             else
             {
@@ -54,6 +66,10 @@ public class DisplayInventory : MonoBehaviour
         var obj = Instantiate(inventory.container[i].item.prefab, Vector3.zero, Quaternion.identity, transform);
         obj.GetComponent<RectTransform>().localPosition = GetPosition(i);
         obj.GetComponentInChildren<TextMeshProUGUI>().text = inventory.container[i].amount.ToString("n0");
+        obj.GetComponent<Button>().onClick.AddListener(() => {
+            uIController.activateInvisibility();
+            inventory.RemoveItem(inventory.container[i].item);
+        });
         itemsDisplayed.Add(inventory.container[i], obj);
     }
 }

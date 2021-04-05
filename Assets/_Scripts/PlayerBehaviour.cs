@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-
     public enum PlayerState
     {
         IDLE,
@@ -16,9 +15,13 @@ public class PlayerBehaviour : MonoBehaviour
     private Animator animator;
     public CharacterController controller;
     public AudioSource hitSound;
+    public bool invisible;
 
     [Header("Inventory")]
     public InventoryObject inventory;
+
+    [Header("Abilities")]
+    public float invisibilityDuration;
 
     [Header("Controls")]
     public Joystick joystick;
@@ -56,16 +59,12 @@ public class PlayerBehaviour : MonoBehaviour
             return;
         }
 
-      
         isGrounded = Physics.CheckSphere(groundCheck.position, groundRadius, groundMask);
 
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2.0f;
         }
-
-        /*float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");*/
 
         float x = joystick.Horizontal * horizontalSensitivity;
         float z = joystick.Vertical * verticalSensitivity;
@@ -81,12 +80,6 @@ public class PlayerBehaviour : MonoBehaviour
         else {
             animator.SetInteger("AnimState", (int)PlayerState.IDLE);
         }
-        
-
-        /*if (Input.GetButton("Jump") && isGrounded)
-        {
-            Jump();
-        }*/
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
@@ -140,8 +133,30 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
+    public void activateInvisibility()
+    {
+        StartCoroutine(invisibilityCoroutine());
+    }
+
+    IEnumerator invisibilityCoroutine()
+    {
+        Debug.Log("Invisibility Started");
+        Color color = gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material.color;
+        var mesh = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
+        invisible = true;
+
+        mesh.material.color = new Color(1,1,1,0.1f);
+        yield return new WaitForSeconds(invisibilityDuration);
+        mesh.material.color = color;
+        invisible = false;
+        Debug.Log("Invisibility Ended");
+        StopCoroutine(invisibilityCoroutine());
+    }
+
+
     private void OnApplicationQuit()
     {
+        // clear the inventory when the application exits
         inventory.container.Clear();
     }
 }

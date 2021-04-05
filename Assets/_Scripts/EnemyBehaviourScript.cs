@@ -79,17 +79,19 @@ public class EnemyBehaviourScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            HasLOS = true;
-            player = other.transform.gameObject;
-            droneSound.Play();
-            gunSound.Play();
+            if (!playerBehaviour.invisible)
+            {
+                HasLOS = true;
+                player = other.transform.gameObject;
+                droneSound.Play();
+                gunSound.Play();
 
-            StartCoroutine(shoot());
-            /*bulletScript.shootBullet();*/
+                StartCoroutine(shoot());
 
-            // stop routines and follow player
-            StopCoroutine(patrol());
-            StopCoroutine(lostSight());
+                // stop routines and follow player
+                StopCoroutine(patrol());
+                StopCoroutine(lostSight());
+            }
         }
     }
 
@@ -98,14 +100,25 @@ public class EnemyBehaviourScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // start routine for losing sight of player
-            StartCoroutine(lostSight());
+            if (HasLOS)
+            {
+                StartCoroutine(lostSight());
+            }
         }
     }
 
     IEnumerator shoot()
     {
-        while (HasLOS) { 
-            bulletScript.shootBullet();
+        while (HasLOS) {
+            if (!playerBehaviour.invisible)
+            {
+                bulletScript.shootBullet();
+            } 
+            else
+            {
+                HasLOS = false;
+                StartCoroutine(lostSight());
+            }
 
             yield return new WaitForSeconds(0.3f);
         }
@@ -113,23 +126,26 @@ public class EnemyBehaviourScript : MonoBehaviour
 
     IEnumerator lostSight()
     {
+        var lastPosition = player.transform.position;
         yield return new WaitForSeconds(1);
 
         // go to player's last known location
-        navMeshAgent.SetDestination(player.transform.position);
+        navMeshAgent.SetDestination(lastPosition);
         HasLOS = false;
         isAttacking = false;
-        yield return new WaitForSeconds(1);
 
         droneSound.Stop();
         gunSound.Stop();
 
+        yield return new WaitForSeconds(1);
+
         // wait until navmesh reaches destination
-        while (navMeshAgent.remainingDistance != 0)
+        while (navMeshAgent.remainingDistance > 1)
         {
             yield return null;
         }
 
+        navMeshAgent.isStopped = true;
         // look around for player then wait for 4 seconds instead of immediately leaving the area 
         /*animator.SetInteger("AnimState", (int)DroneStates.LOOK);
         yield return new WaitForSeconds(4);*/
@@ -150,6 +166,9 @@ public class EnemyBehaviourScript : MonoBehaviour
         // while the player hasn't been sighted
         while (!HasLOS)
         {
+            if (navMeshAgent.isStopped)
+                navMeshAgent.isStopped = false;
+            
             if (points.Length != 0)
             {
                 // Set the agent to go to the currently selected destination.
@@ -172,31 +191,6 @@ public class EnemyBehaviourScript : MonoBehaviour
             {
                 yield break;
             }
-
-
-            /*// move forward 30 units
-            navMeshAgent.SetDestination(startPosition + (forward * patrolDistance));
-            yield return null;
-
-            // wait until navmesh reaches destination
-            while (navMeshAgent.remainingDistance != 0)
-            {
-                yield return null;
-            }
-
-            yield return new WaitForSeconds(5);
-
-            // move back to start position
-            navMeshAgent.SetDestination(startPosition);
-            yield return null;
-
-            // wait until navmesh reaches destination
-            while (navMeshAgent.remainingDistance != 0)
-            {
-                yield return null;
-            }
-
-            yield return new WaitForSeconds(5);*/
         }
     }
 

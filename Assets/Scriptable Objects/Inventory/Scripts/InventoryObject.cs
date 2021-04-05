@@ -24,6 +24,18 @@ public class InventoryObject : ScriptableObject
             container.Add(new InventorySlot(_item, _amount));
         }
     }
+
+    public void RemoveItem(ItemObject _item)
+    {
+        for (int i = 0; i < container.Count; i++)
+        {
+            if (container[i].item == _item)
+            {
+                container[i].AddAmount(-1);
+                break;
+            }
+        }
+    }
 }
 
 [System.Serializable]
