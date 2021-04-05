@@ -54,6 +54,8 @@ class stun : Bullet
 public class Bullets : MonoBehaviour
 {
 
+
+
     public GameObject shootingDrone;
     public GameObject bulletPrefab;
     public GameObject stunPrefab;
@@ -84,18 +86,36 @@ public class Bullets : MonoBehaviour
             bullet.transform.rotation = Quaternion.Euler(90, 0, 0);
             Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
             spawnpoint.parent.GetComponent<Collider>());
-            bullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, bulletType.speed), ForceMode.Impulse);
-            
 
-            Destroy(bullet, 2f);
+            float directionalitySpeed = 0f;
+            if (shootingDrone.transform.forward.z >= 0)
+            {
+                directionalitySpeed = bulletType.speed;
+            }
+            else
+            {
+                directionalitySpeed = -bulletType.speed;
+            }
+            bullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, bulletType.speed), ForceMode.Impulse);
+
+            StartCoroutine(repool(bullet));
+
+           
         }
         else {
-            GameObject stun = Instantiate(stunPrefab);
+            GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject();
+            if (bullet != null)
+            {
+                bullet.transform.position = shootingDrone.transform.position;
+                bullet.transform.rotation = shootingDrone.transform.rotation;
+                bullet.SetActive(true);
+            }
+
 
             Bullet bulletType = new stun();
-            stun.transform.position = spawnpoint.position;
-            stun.transform.rotation = Quaternion.Euler(90, 0, 0);
-            Physics.IgnoreCollision(stun.GetComponent<Collider>(),
+            bullet.transform.position = spawnpoint.position;
+            bullet.transform.rotation = Quaternion.Euler(90, 0, 0);
+            Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
             spawnpoint.parent.GetComponent<Collider>());
 
             float directionalitySpeed = 0f;
@@ -106,10 +126,10 @@ public class Bullets : MonoBehaviour
             {
                 directionalitySpeed = -bulletType.speed;
             }
-            stun.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, directionalitySpeed) , ForceMode.VelocityChange);
+            bullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, directionalitySpeed) , ForceMode.VelocityChange);
 
-            Destroy(stun, 2f);
-           
+            StartCoroutine(repool(bullet));
+
         }
       
         
@@ -123,4 +143,13 @@ public class Bullets : MonoBehaviour
         shootBullet();
     }
 
+    //return bullet back to pool after 2 seconds co routine
+    IEnumerator repool(GameObject bullet)
+    {
+         yield return new WaitForSeconds(2);
+         bullet.SetActive(false);
+    }
+
+
 }
+
