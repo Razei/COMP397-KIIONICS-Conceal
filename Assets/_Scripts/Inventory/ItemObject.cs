@@ -5,6 +5,7 @@ public enum ItemType
 {
     Health, Equipment, Default
 }
+
 public abstract class ItemObject : ScriptableObject
 {
     public GameObject prefab;

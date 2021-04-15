@@ -42,6 +42,12 @@ public class PlayerBehaviour : MonoBehaviour
    
     private PauseMenu pauseMenu;
 
+    private void OnEnable()
+    {
+        // execute inventory add item function when pickup event is invoked
+        OnItemPickupEvent.itemPickedUp += inventory.AddItem;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -120,16 +126,6 @@ public class PlayerBehaviour : MonoBehaviour
         if (isGrounded)
         {
             Jump();
-        }
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        var item = other.GetComponent<Item>();
-        if (item)
-        {
-            inventory.AddItem(item.item, 1);
-            Destroy(other.gameObject);
         }
     }
 
