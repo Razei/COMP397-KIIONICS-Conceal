@@ -42,6 +42,8 @@ public class PlayerBehaviour : MonoBehaviour
    
     private PauseMenu pauseMenu;
 
+    GameObject quest;
+
     private void OnEnable()
     {
         // execute inventory add item function when pickup event is invoked
@@ -128,6 +130,11 @@ public class PlayerBehaviour : MonoBehaviour
     public void activateInvisibility()
     {
         StartCoroutine(invisibilityCoroutine());
+        OnInvisUseEvent.isUsed = true;
+        if (OnInvisUseEvent.isUsed == true) {
+            quest = GameObject.Find("Quest2");
+            quest.SetActive(false);
+        }
     }
 
     IEnumerator invisibilityCoroutine()

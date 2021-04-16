@@ -7,6 +7,7 @@ public class AchievementManager : MonoBehaviour
     private int pickupCount = 0;
     private int equipmentPickupCount = 0;
     private int pickupGoal = 2;
+    public GameObject quest;
 
     // "subscribe" to relevant events
     void OnEnable()
@@ -29,6 +30,9 @@ public class AchievementManager : MonoBehaviour
 
     private void ItemPickupAchievement(ItemObject item, int quantity)
     {
+
+        quest = GameObject.Find("Quest1");
+        quest.SetActive(false);
         pickupCount += quantity;
   
         if (pickupCount >= pickupGoal)
