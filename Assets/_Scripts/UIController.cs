@@ -13,6 +13,11 @@ public class UIController : MonoBehaviour
         SceneDataSO.scoreUpdated += updateScore;
     }
 
+    private void OnDisable()
+    {
+        SceneDataSO.scoreUpdated -= updateScore;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

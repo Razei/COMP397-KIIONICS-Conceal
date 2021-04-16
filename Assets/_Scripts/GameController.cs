@@ -7,13 +7,7 @@ public class GameController : MonoBehaviour
     public SceneDataSO playerData;
     public PlayerBehaviour player;
     public InventoryObject playerInventory;
-    public static int localScore = 0;
-    public static event Action sceneChangedEvent;
-
-    public static void InvokeSceneChangedEvent()
-    {
-        sceneChangedEvent?.Invoke();
-    }
+    public static int localScore;
 
     void OnEnable()
     {
@@ -21,6 +15,16 @@ public class GameController : MonoBehaviour
         OnGoalEvent.goalEvent += goalReached;
         LoadSaveEvent.dataOperationEvent += DataOperationEventTriggered;
         OnScoreOrbPickupEvent.orbPickedUp += updateScore;
+        PlayerHitEvent.playerHitEvent += removeScore;
+    }
+
+    void OnDisable()
+    {
+        // subscribe methods to related events
+        OnGoalEvent.goalEvent -= goalReached;
+        LoadSaveEvent.dataOperationEvent -= DataOperationEventTriggered;
+        OnScoreOrbPickupEvent.orbPickedUp -= updateScore;
+        PlayerHitEvent.playerHitEvent -= removeScore;
     }
 
     private void Awake()
@@ -33,14 +37,33 @@ public class GameController : MonoBehaviour
         player = FindObjectOfType<PlayerBehaviour>();
     }
 
+    public void ResetGame()
+    {
+        localScore = 0;
+        playerInventory.ClearInventory();
+    }
+
     public void TriggerStart()
     {
         Start();
     }
 
-    public void updateScore()
+    public void updateScore(int value)
     {
-        localScore += 100;
+        localScore += value;
+        playerData.SetPlayerScore(localScore);
+    }
+
+    public void removeScore(int value)
+    {
+        if (localScore <= 0)
+        {
+            localScore = 0;
+        } else
+        {
+            localScore -= value;
+        }
+
         playerData.SetPlayerScore(localScore);
     }
 
@@ -48,7 +71,6 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("Goal reached triggered");
         SceneManager.LoadScene("GoalScene");
-        InvokeSceneChangedEvent();
     }
 
     public void DataOperationEventTriggered(DataOperation dataOperation)
@@ -87,7 +109,6 @@ public class GameController : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        localScore = 0;
-        playerInventory.container.Clear();
+        ResetGame();
     }
 }

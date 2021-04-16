@@ -14,6 +14,13 @@ public class HealthBarScreenSpaceController : MonoBehaviour
     {
         PlayerHitEvent.playerHitEvent += TakeDamage;
     }
+
+    private void OnDisable()
+    {
+        PlayerHitEvent.playerHitEvent -= TakeDamage;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {

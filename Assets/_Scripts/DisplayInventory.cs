@@ -21,6 +21,11 @@ public class DisplayInventory : MonoBehaviour
         inventory.inventoryUpdatedTrigger += UpdateDisplay;
     }
 
+    void OnDisable()
+    {
+        inventory.inventoryUpdatedTrigger -= UpdateDisplay;
+    }
+
     void Start()
     {
         CreateDisplay();

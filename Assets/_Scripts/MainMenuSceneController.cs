@@ -8,6 +8,7 @@ public class MainMenuSceneController : MonoBehaviour
     GameObject options;
     GameObject loadGame;
     public GameController gameController;
+    public SceneDataSO defaultData;
     private GameObject activeObject;
 
     // Start is called before the first frame update
@@ -17,13 +18,20 @@ public class MainMenuSceneController : MonoBehaviour
         options = GameObject.Find("OptionsContainer");
         loadGame = GameObject.Find("LoadGameContainer");
 
+        if (!gameController)
+        {
+            gameController = FindObjectOfType<GameController>();
+        }
+
         options?.SetActive(false);
         loadGame?.SetActive(false);
     }
 
     public void NewGame()
     {
+        gameController.ResetGame();
         SceneManager.LoadScene("GameScene");
+        gameController.TriggerStart();
     }
 
     public void LoadGame()

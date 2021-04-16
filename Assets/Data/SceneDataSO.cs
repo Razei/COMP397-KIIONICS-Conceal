@@ -14,7 +14,14 @@ public class SceneDataSO : ScriptableObject
 
     public void SetPlayerScore(int score)
     {
-        playerScore = score;
+        if (playerScore <= 0)
+        {
+            playerScore = 0;
+        }
+        else
+        {
+            playerScore = score;
+        }
         scoreUpdated?.Invoke(score);
     }
 }

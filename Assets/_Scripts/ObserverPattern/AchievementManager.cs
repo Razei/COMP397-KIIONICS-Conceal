@@ -12,12 +12,14 @@ public class AchievementManager : MonoBehaviour
     void OnEnable()
     {
         OnItemPickupEvent.itemPickedUpWithQuantity += ItemPickupAchievement;
+        OnItemPickupEvent.itemPickedUpWithQuantity += EquipmentPickupAchievement;
     }
 
     //unsubscribe
     void OnDisable()
     {
         OnItemPickupEvent.itemPickedUpWithQuantity -= ItemPickupAchievement;
+        OnItemPickupEvent.itemPickedUpWithQuantity -= EquipmentPickupAchievement;
     }
 
     private void ShowAchievement(string message)
@@ -27,28 +29,26 @@ public class AchievementManager : MonoBehaviour
 
     private void ItemPickupAchievement(ItemObject item, int quantity)
     {
-        bool allAchieved = pickupCount == pickupGoal && equipmentPickupCount == pickupGoal;
         pickupCount += quantity;
-
-        if (item.type == ItemType.Equipment)
-        {
-            equipmentPickupCount += quantity;
-        }
-        
+  
         if (pickupCount >= pickupGoal)
         {
             ShowAchievement($"Pick up {pickupGoal} items");
+            OnItemPickupEvent.itemPickedUpWithQuantity -= ItemPickupAchievement;
+        }
+    }
+
+    private void EquipmentPickupAchievement(ItemObject item, int quantity)
+    {
+        if (item.type == ItemType.Equipment)
+        {
+            equipmentPickupCount += quantity;
         }
 
         if (equipmentPickupCount >= pickupGoal)
         {
             ShowAchievement($"Pick up {pickupGoal} equipment items");
-        }
-
-        if (allAchieved)
-        {
-            //unsubscribe
-            OnItemPickupEvent.itemPickedUpWithQuantity -= ItemPickupAchievement;
+            OnItemPickupEvent.itemPickedUpWithQuantity -= EquipmentPickupAchievement;
         }
     }
 }

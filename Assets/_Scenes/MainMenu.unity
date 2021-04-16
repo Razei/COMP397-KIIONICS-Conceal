@@ -3033,6 +3033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 1707644871}
+  defaultData: {fileID: 11400000, guid: 44de47f302957774fb593f2fc06fe511, type: 2}
 --- !u!1 &1707644870
 GameObject:
   m_ObjectHideFlags: 0

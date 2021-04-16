@@ -49,6 +49,13 @@ public class PlayerBehaviour : MonoBehaviour
         PlayerHitEvent.playerHitEvent += PlayerHit;
     }
 
+    private void OnDisable()
+    {
+        // execute inventory add item function when pickup event is invoked
+        OnItemPickupEvent.itemPickedUpWithQuantity -= inventory.AddItem;
+        PlayerHitEvent.playerHitEvent -= PlayerHit;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
