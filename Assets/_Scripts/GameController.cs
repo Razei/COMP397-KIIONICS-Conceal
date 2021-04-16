@@ -4,8 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public SceneDataSO sceneData;
+    public SceneDataSO playerData;
     public PlayerBehaviour player;
+    public int localScore;
     public static event Action sceneChangedEvent;
 
     public static void InvokeSceneChangedEvent()
@@ -19,9 +20,19 @@ public class GameController : MonoBehaviour
         LoadSaveEvent.dataOperationEvent += DataOperationEventTriggered;
     }
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     void Start()
     {
         player = FindObjectOfType<PlayerBehaviour>();
+    }
+
+    public void TriggerStart()
+    {
+        Start();
     }
 
     public void goalReached()
@@ -38,17 +49,25 @@ public class GameController : MonoBehaviour
             case DataOperation.SAVE:
                 if (player)
                 {
-                    sceneData.playerPosition = player.transform.position;
-                    sceneData.playerRotation = player.transform.rotation;
+                    playerData.playerPosition = player.transform.position;
+                    playerData.playerRotation = player.transform.rotation;
                 }
                 break;
             case DataOperation.LOAD:
                 if (player)
                 {
-                    player.controller.enabled = false;
-                    player.transform.position = sceneData.playerPosition;
-                    player.transform.rotation = sceneData.playerRotation;
-                    player.controller.enabled = true;
+                    if (player.controller)
+                    {
+                        player.controller.enabled = false;
+                        player.transform.position = playerData.playerPosition;
+                        player.transform.rotation = playerData.playerRotation;
+                        player.controller.enabled = true;
+                    }
+                    else
+                    {
+                        player.transform.position = playerData.playerPosition;
+                        player.transform.rotation = playerData.playerRotation;
+                    }
                 }
                 break;
             default:
@@ -58,6 +77,6 @@ public class GameController : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        sceneData.playerScore = 0;
+        localScore = 0;
     }
 }

@@ -12,12 +12,12 @@ public class LoadSaveEvent : MonoBehaviour
     // trigger and return the item picked up with a quantity
     public static event Action<DataOperation> dataOperationEvent;
 
-    public void SaveData()
+    public static void SaveData()
     {
         dataOperationEvent.Invoke(DataOperation.SAVE);
     }
 
-    public void LoadData()
+    public static void LoadData()
     {
         dataOperationEvent.Invoke(DataOperation.LOAD);
     }

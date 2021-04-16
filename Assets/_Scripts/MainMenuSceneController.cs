@@ -10,6 +10,7 @@ public class MainMenuSceneController : MonoBehaviour
     GameObject mainMenu;
     GameObject options;
     GameObject loadGame;
+    public GameController gameController;
     private GameObject activeObject;
 
     // Start is called before the first frame update
@@ -30,11 +31,13 @@ public class MainMenuSceneController : MonoBehaviour
 
     public void LoadGame()
     {
-        if (loadGame)
+        SceneManager.LoadScene("GameScene");
+        SceneManager.sceneLoaded += afterLoaded;
+        /*if (loadGame)
         {
             activeObject = loadGame;
             switchFromMainPanel();
-        }
+        }*/
     }
 
     public void showOptions()
@@ -57,6 +60,12 @@ public class MainMenuSceneController : MonoBehaviour
 
     public void returnToMainScene(){
          SceneManager.LoadScene("MainMenu");
+    }
+
+    private void afterLoaded(Scene scene, LoadSceneMode mode)
+    {
+        gameController.TriggerStart();
+        LoadSaveEvent.LoadData();
     }
 
     public void Quit()
