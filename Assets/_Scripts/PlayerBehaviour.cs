@@ -39,16 +39,15 @@ public class PlayerBehaviour : MonoBehaviour
     public bool isGrounded;
     public LayerMask groundMask;
     public Vector3 velocity;
-   
     private PauseMenu pauseMenu;
-
-    GameObject quest;
 
     private void OnEnable()
     {
         // execute inventory add item function when pickup event is invoked
         OnItemPickupEvent.itemPickedUpWithQuantity += inventory.AddItem;
         PlayerHitEvent.playerHitEvent += PlayerHit;
+        OnInvisUseEvent.invisItemUseTrigger += activateInvisibility;
+        OnControlUsed.controlUsed += OnJumpButtonPressed;
     }
 
     private void OnDisable()
@@ -56,6 +55,8 @@ public class PlayerBehaviour : MonoBehaviour
         // execute inventory add item function when pickup event is invoked
         OnItemPickupEvent.itemPickedUpWithQuantity -= inventory.AddItem;
         PlayerHitEvent.playerHitEvent -= PlayerHit;
+        OnInvisUseEvent.invisItemUseTrigger -= activateInvisibility;
+        OnControlUsed.controlUsed -= OnJumpButtonPressed;
     }
 
     // Start is called before the first frame update
@@ -119,9 +120,9 @@ public class PlayerBehaviour : MonoBehaviour
         hitSound.Play();
     }
 
-    public void OnJumpButtonPressed()
-    {
-        if (isGrounded)
+    public void OnJumpButtonPressed(string type)
+    { 
+        if (isGrounded && type == "Jump")
         {
             Jump();
         }
@@ -130,11 +131,6 @@ public class PlayerBehaviour : MonoBehaviour
     public void activateInvisibility()
     {
         StartCoroutine(invisibilityCoroutine());
-        OnInvisUseEvent.isUsed = true;
-        if (OnInvisUseEvent.isUsed == true) {
-            quest = GameObject.Find("Quest2");
-            quest.SetActive(false);
-        }
     }
 
     IEnumerator invisibilityCoroutine()

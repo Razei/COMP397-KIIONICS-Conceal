@@ -45,9 +45,6 @@ public class AchievementManager : MonoBehaviour
 
     private void ItemPickupAchievement(ItemObject item, int quantity)
     {
-
-        quest = GameObject.Find("Quest1");
-        quest?.SetActive(false);
         pickupCount += quantity;
   
         if (pickupCount >= pickupGoal)

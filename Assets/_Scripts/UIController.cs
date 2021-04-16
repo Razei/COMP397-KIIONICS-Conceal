@@ -38,6 +38,6 @@ public class UIController : MonoBehaviour
 
     public void activateInvisibility()
     {
-        player.activateInvisibility();
+        OnInvisUseEvent.InvokeInvisItemUsed();
     }
 }
