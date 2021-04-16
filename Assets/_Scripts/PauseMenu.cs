@@ -43,15 +43,6 @@ public class PauseMenu : MonoBehaviour
       
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Pause();
-        }*/
-    }
-
     public void Pause()
     {
         if (Paused)
@@ -64,7 +55,6 @@ public class PauseMenu : MonoBehaviour
             pauseMenu.SetActive(true);
             menuButton.SetActive(false);
             Time.timeScale = 0.0f;
-            Cursor.lockState = CursorLockMode.None;
             Paused = true;
             AudioListener.pause = true;
         }
@@ -77,7 +67,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         menuButton.SetActive(true);
         Time.timeScale = 1.0f;
-        Cursor.lockState = CursorLockMode.Locked;
         Paused = false;
     }
 
@@ -110,32 +99,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         GameController.InvokeSceneChangedEvent();
         SceneManager.LoadScene("MainMenu");
-        /*Application.LoadLevel("MainMenu");
-        Application.UnloadLevel("GameScene");*/
     }
-
-    public void OnLoadButtonPressed()
-    {
-        player.controller.enabled = false;
-        player.transform.position = sceneData.playerPosition;
-        player.transform.rotation = sceneData.playerRotation;
-        player.controller.enabled = true;
-
-        //player.health= sceneData.playerHealth;
-        //player.healthBar.SetHealth(sceneData.playerHealth);
-
-    }
-
-    public void OnSaveButtonPressed()
-    {
-        //gives unity.engine transform : TYPE MISMATCH
-
-        sceneData.playerPosition = player.transform.position;
-        sceneData.playerRotation = player.transform.rotation;
-        //sceneData.playerHealth = player.health;
-    }
-
-
 }
 
 

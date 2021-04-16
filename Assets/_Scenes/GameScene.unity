@@ -4111,6 +4111,7 @@ GameObject:
   - component: {fileID: 129150944}
   - component: {fileID: 129150943}
   - component: {fileID: 129150942}
+  - component: {fileID: 129150945}
   m_Layer: 5
   m_Name: Save Button
   m_TagString: Untagged
@@ -4182,9 +4183,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 873167175}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: OnSaveButtonPressed
+      - m_Target: {fileID: 129150945}
+        m_TargetAssemblyTypeName: LoadSaveEvent, Assembly-CSharp
+        m_MethodName: SaveData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4232,6 +4233,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129150940}
   m_CullTransparentMesh: 1
+--- !u!114 &129150945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129150940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb24a4deedaa924a9993059f6eb679a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &129254978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51690,6 +51703,7 @@ GameObject:
   - component: {fileID: 1300800974}
   - component: {fileID: 1300800973}
   - component: {fileID: 1300800972}
+  - component: {fileID: 1300800975}
   m_Layer: 5
   m_Name: Load Button
   m_TagString: Untagged
@@ -51761,9 +51775,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 873167175}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: OnLoadButtonPressed
+      - m_Target: {fileID: 1300800975}
+        m_TargetAssemblyTypeName: LoadSaveEvent, Assembly-CSharp
+        m_MethodName: LoadData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51811,6 +51825,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300800970}
   m_CullTransparentMesh: 1
+--- !u!114 &1300800975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300800970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb24a4deedaa924a9993059f6eb679a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1302859722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81475,9 +81501,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2091928615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e71b318b8cd0e43aa1e2fc33a1aa6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 36986676aca85eb419aa41289108397d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneData: {fileID: 11400000, guid: 3ec2cf1f447170249b8f46161a4ec875, type: 2}
+  player: {fileID: 0}
 --- !u!4 &2091928617
 Transform:
   m_ObjectHideFlags: 0
