@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     public SceneDataSO playerData;
     public PlayerBehaviour player;
-    public int localScore;
+    public static int localScore = 0;
     public static event Action sceneChangedEvent;
 
     public static void InvokeSceneChangedEvent()

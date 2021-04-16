@@ -17,6 +17,7 @@ public class UIController : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerBehaviour>();
+        scoreText.text = $"Score: {GameController.localScore}";
     }
 
     // Update is called once per frame
