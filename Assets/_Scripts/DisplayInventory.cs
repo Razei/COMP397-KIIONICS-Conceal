@@ -15,6 +15,11 @@ public class DisplayInventory : MonoBehaviour
     public int NUM_OF_COLUMNS;
     Dictionary<InventorySlot, GameObject> itemsDisplayed = new Dictionary<InventorySlot, GameObject>();
 
+    void OnEnable()
+    {
+        inventory.inventoryUpdatedTrigger += UpdateDisplay;
+    }
+
     void Start()
     {
         CreateDisplay();
@@ -23,7 +28,7 @@ public class DisplayInventory : MonoBehaviour
 
     void Update()
     {
-        UpdateDisplay();
+
     }
 
     public void CreateDisplay()

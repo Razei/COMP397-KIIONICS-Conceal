@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +7,9 @@ public class InventoryObject : ScriptableObject
 {
     public List<InventorySlot> container = new List<InventorySlot>();
 
+    // simple trigger
+    public event Action inventoryUpdatedTrigger;
+
     public void AddItem(ItemObject _item, int _amount)
     {
         bool hasItem = false;
@@ -14,6 +17,7 @@ public class InventoryObject : ScriptableObject
         {
             if (container[i].item == _item){
                 container[i].AddAmount(_amount);
+                inventoryUpdatedTrigger.Invoke();
                 hasItem = true;
                 break;
             }
@@ -22,6 +26,7 @@ public class InventoryObject : ScriptableObject
         if (!hasItem)
         {
             container.Add(new InventorySlot(_item, _amount));
+            inventoryUpdatedTrigger.Invoke();
         }
     }
 
@@ -32,9 +37,15 @@ public class InventoryObject : ScriptableObject
             if (container[i].item == _item)
             {
                 container[i].AddAmount(-1);
+                inventoryUpdatedTrigger?.Invoke();
                 break;
             }
         }
+    }
+
+    public void InventoryUpdatedEventTest()
+    {
+        Debug.Log("Inventory updated");
     }
 }
 

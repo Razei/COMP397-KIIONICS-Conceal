@@ -3,7 +3,11 @@ using UnityEngine;
 
 public class OnItemPickupEvent : MonoBehaviour
 {
-    public static event Action<ItemObject, int> itemPickedUp;
+    // simple trigger
+    public static event Action itemPickedUpTrigger;
+
+    // trigger and return the item picked up with a quantity
+    public static event Action<ItemObject, int> itemPickedUpWithQuantity;
 
     // trigger this event when the object 
     // the script is attached to collides with another object
@@ -13,7 +17,8 @@ public class OnItemPickupEvent : MonoBehaviour
         if (item)
         {
             Debug.Log($"Item {item.item} picked up");
-            itemPickedUp?.Invoke(item.item, 1);
+            itemPickedUpWithQuantity?.Invoke(item.item, 1);
+            itemPickedUpTrigger?.Invoke();
             Destroy(other.gameObject);
         }
     }

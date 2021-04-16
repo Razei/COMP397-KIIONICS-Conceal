@@ -45,7 +45,7 @@ public class PlayerBehaviour : MonoBehaviour
     private void OnEnable()
     {
         // execute inventory add item function when pickup event is invoked
-        OnItemPickupEvent.itemPickedUp += inventory.AddItem;
+        OnItemPickupEvent.itemPickedUpWithQuantity += inventory.AddItem;
     }
 
     // Start is called before the first frame update
