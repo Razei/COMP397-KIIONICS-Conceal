@@ -26,11 +26,6 @@ public class DisplayInventory : MonoBehaviour
         uIController = FindObjectOfType<UIController>();
     }
 
-    void Update()
-    {
-
-    }
-
     public void CreateDisplay()
     {
         for (int i = 0; i < inventory.container.Count; i++)
