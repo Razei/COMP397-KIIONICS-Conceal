@@ -39,7 +39,10 @@ public class PlayerBehaviour : MonoBehaviour
     public bool isGrounded;
     public LayerMask groundMask;
     public Vector3 velocity;
-   
+
+    [Header("Active Quest")]
+    public Quest quest;
+
     private PauseMenu pauseMenu;
 
     private void OnEnable()

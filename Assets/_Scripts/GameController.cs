@@ -7,6 +7,9 @@ public class GameController : MonoBehaviour
     public SceneDataSO sceneData;
     public PlayerBehaviour player;
     public static event Action sceneChangedEvent;
+    public SaveSystem save;
+  
+
 
     public static void InvokeSceneChangedEvent()
     {
@@ -22,11 +25,14 @@ public class GameController : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerBehaviour>();
+        
     }
 
     public void goalReached()
     {
+        
         Debug.Log("Goal reached triggered");
+        
         SceneManager.LoadScene("GoalScene");
         InvokeSceneChangedEvent();
     }

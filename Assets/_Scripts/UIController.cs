@@ -30,6 +30,11 @@ public class UIController : MonoBehaviour
         scoreText.text = $"Score: {score}";
     }
 
+    public void updateScore(int value){
+        score += value;
+        scoreText.text = $"Score: {score}";
+    }
+
     public void activateInvisibility()
     {
         player.activateInvisibility();
