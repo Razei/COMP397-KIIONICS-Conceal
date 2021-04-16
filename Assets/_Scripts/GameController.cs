@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
     public SceneDataSO playerData;
     public PlayerBehaviour player;
     public InventoryObject playerInventory;
+    private bool loadData = false;
     public static int localScore;
 
     void OnEnable()
@@ -37,6 +38,24 @@ public class GameController : MonoBehaviour
         player = FindObjectOfType<PlayerBehaviour>();
     }
 
+    void OnLevelWasLoaded(int level)
+    {
+        if (level == 1)
+        {
+            player = FindObjectOfType<PlayerBehaviour>();
+
+            if (loadData)
+            {
+                // trigger the load event
+                LoadSaveEvent.LoadData();
+            }
+        } 
+        else
+        {
+            loadData = false;
+        }
+    }
+
     public void ResetGame()
     {
         localScore = 0;
@@ -46,6 +65,10 @@ public class GameController : MonoBehaviour
     public void TriggerStart()
     {
         Start();
+    }
+    public void SetLoad(bool value)
+    {
+        loadData = value;
     }
 
     public void updateScore(int value)

@@ -30,16 +30,15 @@ public class MainMenuSceneController : MonoBehaviour
     public void NewGame()
     {
         gameController.ResetGame();
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadSceneAsync("GameScene");
         gameController.TriggerStart();
     }
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("GameScene");
+        gameController.SetLoad(true);
+        SceneManager.LoadSceneAsync("GameScene");
 
-        // called after the next scene is loaded
-        SceneManager.sceneLoaded += afterLoaded;
         /*if (loadGame)
         {
             activeObject = loadGame;
@@ -69,17 +68,6 @@ public class MainMenuSceneController : MonoBehaviour
          SceneManager.LoadScene("MainMenu");
     }
 
-    private void afterLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // trigger the start function to get the player reference
-        gameController.TriggerStart();
-
-        // trigger the load event
-        LoadSaveEvent.LoadData();
-
-        // unsubscribe
-        SceneManager.sceneLoaded -= afterLoaded;
-    }
 
     public void Quit()
     {
