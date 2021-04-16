@@ -10,9 +10,6 @@ public class GameController : MonoBehaviour
     private bool loadData = false;
     public static int localScore;
     public static event Action sceneChangedEvent;
-    public SaveSystem save;
-  
-
 
     public static void InvokeSceneChangedEvent()
     {
@@ -45,7 +42,6 @@ public class GameController : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerBehaviour>();
-        
     }
 
     void OnLevelWasLoaded(int level)
@@ -102,9 +98,7 @@ public class GameController : MonoBehaviour
 
     public void goalReached()
     {
-        
         Debug.Log("Goal reached triggered");
-        
         SceneManager.LoadScene("GoalScene");
     }
 

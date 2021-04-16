@@ -21,8 +21,6 @@ public class PauseMenu : MonoBehaviour
     public CameraController playerCamera;
     public Pauseable pausable;
 
-    public GameObject questMenu;
-
     [Header("Scene Data")]
     public SceneDataSO sceneData;
     //adding label
@@ -59,7 +57,6 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 0.0f;
             Paused = true;
             AudioListener.pause = true;
-            questMenu.SetActive(true);
         }
     }
 
@@ -71,8 +68,6 @@ public class PauseMenu : MonoBehaviour
         menuButton.SetActive(true);
         Time.timeScale = 1.0f;
         Paused = false;
-        questMenu.SetActive(false);
-
     }
 
     public void Save()
