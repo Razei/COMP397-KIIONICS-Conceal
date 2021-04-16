@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public enum ItemType
 {
-    Health, Equipment, Default
+    Health, Equipment, Default, Goal
 }
 
 public abstract class ItemObject : ScriptableObject

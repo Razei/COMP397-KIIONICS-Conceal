@@ -11,6 +11,12 @@ public class GameController : MonoBehaviour
     GameObject options;
     GameObject loadGame;
     private GameObject activeObject;
+
+    void Awake()
+    {
+        OnGoalEvent.goalEvent += goalReached;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +69,11 @@ public class GameController : MonoBehaviour
 
     public void returnToMainScene(){
          SceneManager.LoadScene("MainMenu");
+    }
+
+    public void goalReached()
+    {
+        SceneManager.LoadScene("Goal");
     }
 
     public void Quit()
