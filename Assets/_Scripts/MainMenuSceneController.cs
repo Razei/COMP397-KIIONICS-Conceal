@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,6 +29,8 @@ public class MainMenuSceneController : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene("GameScene");
+
+        // called after the next scene is loaded
         SceneManager.sceneLoaded += afterLoaded;
         /*if (loadGame)
         {
@@ -64,8 +63,14 @@ public class MainMenuSceneController : MonoBehaviour
 
     private void afterLoaded(Scene scene, LoadSceneMode mode)
     {
+        // trigger the start function to get the player reference
         gameController.TriggerStart();
+
+        // trigger the load event
         LoadSaveEvent.LoadData();
+
+        // unsubscribe
+        SceneManager.sceneLoaded -= afterLoaded;
     }
 
     public void Quit()
