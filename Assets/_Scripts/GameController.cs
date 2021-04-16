@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     GameObject loadGame;
     private GameObject activeObject;
 
-    void Awake()
+    void OnEnable()
     {
         OnGoalEvent.goalEvent += goalReached;
     }
@@ -73,7 +73,8 @@ public class GameController : MonoBehaviour
 
     public void goalReached()
     {
-        SceneManager.LoadScene("Goal");
+        Debug.Log("Goal reached triggered");
+        SceneManager.LoadScene("GoalScene");
     }
 
     public void Quit()

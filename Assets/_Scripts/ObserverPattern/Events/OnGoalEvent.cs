@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class OnGoalEvent : MonoBehaviour
 {
-    // trigger and return the item picked up with a quantity
     public static event Action goalEvent;
 
     void OnTriggerEnter(Collider other)
