@@ -30,14 +30,14 @@ public class MainMenuSceneController : MonoBehaviour
     public void NewGame()
     {
         gameController.ResetGame();
-        SceneManager.LoadSceneAsync("GameScene");
+        SceneManager.LoadScene("GameScene");
         gameController.TriggerStart();
     }
 
     public void LoadGame()
     {
         gameController.SetLoad(true);
-        SceneManager.LoadSceneAsync("GameScene");
+        SceneManager.LoadScene("GameScene");
 
         /*if (loadGame)
         {
