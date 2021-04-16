@@ -202,8 +202,7 @@ public class EnemyBehaviourScript : MonoBehaviour
         // if the player is still in line of sight after damage delay
         if (HasLOS)
         {
-            healthBar.TakeDamage(10);
-            playerBehaviour.hitSound.Play();
+            PlayerHitEvent.InvokePlayerHitEvent();
             isAttacking = false;
             StopCoroutine(InflictDamage());
         }

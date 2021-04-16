@@ -17,7 +17,7 @@ public class InventoryObject : ScriptableObject
         {
             if (container[i].item == _item){
                 container[i].AddAmount(_amount);
-                inventoryUpdatedTrigger.Invoke();
+                inventoryUpdatedTrigger?.Invoke();
                 hasItem = true;
                 break;
             }
@@ -26,7 +26,7 @@ public class InventoryObject : ScriptableObject
         if (!hasItem)
         {
             container.Add(new InventorySlot(_item, _amount));
-            inventoryUpdatedTrigger.Invoke();
+            inventoryUpdatedTrigger?.Invoke();
         }
     }
 
@@ -41,6 +41,12 @@ public class InventoryObject : ScriptableObject
                 break;
             }
         }
+    }
+
+    public void ClearInventory()
+    {
+        container.Clear();
+        inventoryUpdatedTrigger?.Invoke();
     }
 
     public void InventoryUpdatedEventTest()

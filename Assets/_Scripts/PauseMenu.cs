@@ -102,7 +102,6 @@ public class PauseMenu : MonoBehaviour
     {
         Resume();
         Cursor.lockState = CursorLockMode.None;
-        GameController.InvokeSceneChangedEvent();
         SceneManager.LoadScene("MainMenu");
     }
 }

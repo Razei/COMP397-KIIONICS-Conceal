@@ -10,6 +10,17 @@ public class HealthBarScreenSpaceController : MonoBehaviour
 
     private Slider healthbarSlider;
 
+    private void OnEnable()
+    {
+        PlayerHitEvent.playerHitEvent += TakeDamage;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHitEvent.playerHitEvent -= TakeDamage;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {

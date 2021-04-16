@@ -49,6 +49,14 @@ public class PlayerBehaviour : MonoBehaviour
     {
         // execute inventory add item function when pickup event is invoked
         OnItemPickupEvent.itemPickedUpWithQuantity += inventory.AddItem;
+        PlayerHitEvent.playerHitEvent += PlayerHit;
+    }
+
+    private void OnDisable()
+    {
+        // execute inventory add item function when pickup event is invoked
+        OnItemPickupEvent.itemPickedUpWithQuantity -= inventory.AddItem;
+        PlayerHitEvent.playerHitEvent -= PlayerHit;
     }
 
     // Start is called before the first frame update
@@ -107,21 +115,9 @@ public class PlayerBehaviour : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
     }
 
-    public void SavePlayer()
-
+    public void PlayerHit(int damage)
     {
-        SaveSystem.SavePlayer(this);
-    }
-
-    public void LoadPlayer()
-    {
-        PlayerData data = SaveSystem.LoadPlayer();
-        Vector3 position;
-        position.x = data.position[0];
-        position.y = data.position[1];
-        position.z = data.position[2];
-        transform.position = position;
-
+        hitSound.Play();
     }
 
     public void OnJumpButtonPressed()

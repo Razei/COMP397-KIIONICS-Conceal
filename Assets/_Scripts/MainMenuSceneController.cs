@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +7,8 @@ public class MainMenuSceneController : MonoBehaviour
     GameObject mainMenu;
     GameObject options;
     GameObject loadGame;
+    public GameController gameController;
+    public SceneDataSO defaultData;
     private GameObject activeObject;
 
     // Start is called before the first frame update
@@ -19,22 +18,32 @@ public class MainMenuSceneController : MonoBehaviour
         options = GameObject.Find("OptionsContainer");
         loadGame = GameObject.Find("LoadGameContainer");
 
+        if (!gameController)
+        {
+            gameController = FindObjectOfType<GameController>();
+        }
+
         options?.SetActive(false);
         loadGame?.SetActive(false);
     }
 
     public void NewGame()
     {
+        gameController.ResetGame();
         SceneManager.LoadScene("GameScene");
+        gameController.TriggerStart();
     }
 
     public void LoadGame()
     {
-        if (loadGame)
+        gameController.SetLoad(true);
+        SceneManager.LoadScene("GameScene");
+
+        /*if (loadGame)
         {
             activeObject = loadGame;
             switchFromMainPanel();
-        }
+        }*/
     }
 
     public void showOptions()
@@ -58,6 +67,7 @@ public class MainMenuSceneController : MonoBehaviour
     public void returnToMainScene(){
          SceneManager.LoadScene("MainMenu");
     }
+
 
     public void Quit()
     {

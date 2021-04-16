@@ -5,7 +5,7 @@ using UnityEngine;
 public class SceneDataSO : ScriptableObject
 {
     // simple trigger
-    public event Action scoreUpdated;
+    public static event Action<int> scoreUpdated;
 
     public Vector3 playerPosition;
     public Quaternion playerRotation;
@@ -14,7 +14,14 @@ public class SceneDataSO : ScriptableObject
 
     public void SetPlayerScore(int score)
     {
-        playerScore = score;
-        scoreUpdated?.Invoke();
+        if (playerScore <= 0)
+        {
+            playerScore = 0;
+        }
+        else
+        {
+            playerScore = score;
+        }
+        scoreUpdated?.Invoke(score);
     }
 }
