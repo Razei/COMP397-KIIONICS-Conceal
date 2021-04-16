@@ -7,11 +7,12 @@ public class UIController : MonoBehaviour
 {
     public PlayerBehaviour player;
     public Text scoreText;
-    private int score = 0;
+
     void OnEnable()
     {
-        OnScoreOrbPickupEvent.orbPickedUp += updateScore;
+        SceneDataSO.scoreUpdated += updateScore;
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +25,8 @@ public class UIController : MonoBehaviour
         
     }
 
-    public void updateScore()
+    public void updateScore(int score)
     {
-        score += 100;
         scoreText.text = $"Score: {score}";
     }
 

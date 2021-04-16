@@ -16,8 +16,10 @@ public class GameController : MonoBehaviour
 
     void OnEnable()
     {
+        // subscribe methods to related events
         OnGoalEvent.goalEvent += goalReached;
         LoadSaveEvent.dataOperationEvent += DataOperationEventTriggered;
+        OnScoreOrbPickupEvent.orbPickedUp += updateScore;
     }
 
     private void Awake()
@@ -33,6 +35,12 @@ public class GameController : MonoBehaviour
     public void TriggerStart()
     {
         Start();
+    }
+
+    public void updateScore()
+    {
+        localScore += 100;
+        playerData.SetPlayerScore(localScore);
     }
 
     public void goalReached()
@@ -68,6 +76,7 @@ public class GameController : MonoBehaviour
                         player.transform.position = playerData.playerPosition;
                         player.transform.rotation = playerData.playerRotation;
                     }
+                    localScore = playerData.playerScore;
                 }
                 break;
             default:
