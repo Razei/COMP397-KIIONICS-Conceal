@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AchievementManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class AchievementManager : MonoBehaviour
     private int equipmentPickupCount = 0;
     private int pickupGoal = 2;
     public GameObject quest;
+    public GameObject achievementDisplayPrefab;
 
     // "subscribe" to relevant events
     void OnEnable()
@@ -23,9 +25,22 @@ public class AchievementManager : MonoBehaviour
         OnItemPickupEvent.itemPickedUpWithQuantity -= EquipmentPickupAchievement;
     }
 
-    private void ShowAchievement(string message)
+    private IEnumerator ShowAchievement(string message)
     {
-        Debug.Log($"Achievement unlocked: {message}");
+        var obj = Instantiate(achievementDisplayPrefab, Vector3.zero, Quaternion.identity, transform);
+        obj.transform.SetParent(transform, false);
+        obj.transform.localPosition = Vector3.zero;
+
+        var messageText = obj.transform.Find("Message")?.gameObject.GetComponent<Text>();
+        
+        if (messageText)
+        {
+            messageText.text = $"Achievement unlocked: {message}";
+            yield return new WaitForSeconds(5f);
+        }
+
+        Destroy(obj);
+        yield break;
     }
 
     private void ItemPickupAchievement(ItemObject item, int quantity)
@@ -37,7 +52,7 @@ public class AchievementManager : MonoBehaviour
   
         if (pickupCount >= pickupGoal)
         {
-            ShowAchievement($"Pick up {pickupGoal} items");
+            StartCoroutine(ShowAchievement($"Pick up {pickupGoal} items"));
             OnItemPickupEvent.itemPickedUpWithQuantity -= ItemPickupAchievement;
         }
     }
@@ -51,7 +66,7 @@ public class AchievementManager : MonoBehaviour
 
         if (equipmentPickupCount >= pickupGoal)
         {
-            ShowAchievement($"Pick up {pickupGoal} equipment items");
+            StartCoroutine(ShowAchievement($"Pick up {pickupGoal} equipment items"));
             OnItemPickupEvent.itemPickedUpWithQuantity -= EquipmentPickupAchievement;
         }
     }
