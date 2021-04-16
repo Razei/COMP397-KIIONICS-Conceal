@@ -3064,7 +3064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 3ec2cf1f447170249b8f46161a4ec875, type: 2}
   player: {fileID: 0}
-  localScore: 0
+  playerInventory: {fileID: 11400000, guid: fc3c31fca2d62104eac47acfd135cb70, type: 2}
 --- !u!4 &1707644872
 Transform:
   m_ObjectHideFlags: 0
